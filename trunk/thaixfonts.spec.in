@@ -14,6 +14,7 @@ URL: http://linux.thai.net/linux-tle/
 Distribution: Linux-TLE
 Vendor: uecthai
 Packager: Poonlap Veeratanabutr <poon-v@fedu.uec.ac.jp>
+BuildArch: noarch
 BuildRoot: /var/tmp/%{name}-%{version}
 Summary: The collection of Thai X fonts.
 
@@ -77,6 +78,7 @@ rm -rf $RPM_BUILD_ROOT
 - use License: tag instead of Copyright:
 - move fontdir to /usr/X11R6/lib/X11/fonts/local
 - fix configure --with-fontdir option
+- add BuildArch:
 
 * Fri Aug 24 2001 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 - use configure script to generate .spec file

@@ -2,7 +2,7 @@
 
 	* thaixfonts.spec.in:
 	Fix configure --with-fontdir option. Redefine fontdir to
-	/usr/X11R6/lib/X11/fonts/local.
+	/usr/X11R6/lib/X11/fonts/local. Add BuildArch: section.
 
 	* configure.in:
 	Version 0.2.1
