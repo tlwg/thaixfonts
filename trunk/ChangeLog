@@ -16,8 +16,17 @@
 	Fix fontdir var: remove $(DESTDIR) from assignment, and use it
 	literally in installation scripts instead.
 
+	* configure.in, Makefile.am, poonlap/Makefile.am:
+	Add Poonlap's fonts to the package.
+
+	* thai.alias, -poonlap/fonts.alias, -poonlap/fonts.dir:
+	Move Poonlap's alias info into thai.alias.
+
+	* thaixfonts.spec.in:
+	Update summary to include Poonlap's.
+
 	* configure.in:
-	Version 0.2.1
+	Version 0.3.0
 
 2001-08-24  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 
