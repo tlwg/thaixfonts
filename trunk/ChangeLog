@@ -1,5 +1,9 @@
 2001-11-25  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 
+	* thaixfonts.spec.in:
+	Fix configure --with-fontdir option. Redefine fontdir to
+	/usr/X11R6/lib/X11/fonts/local.
+
 	* configure.in:
 	Version 0.2.1
 
