@@ -1,0 +1,7 @@
+.SUFFIXES: .bdf .pcf .gz
+%.pcf: %.bdf
+	$(BDFTOPCF) -o $@ $<
+
+%.pcf.gz: %.pcf
+	$(GZIP) -f -9 $<
+

@@ -1,0 +1,12 @@
+2001-08-24  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* +configure.in, +Makefile.am, +Make.rule,
+	+{dbthaitext|etlthai|manop|nectec|phaisarn|yenbut}/Makefile.am :
+	Use autoconf/automake to manage package.
+
+	* +AUTHORS, +INSTALL, +NEWS, +README, +COPYING, +ChangeLog :
+	Add necessary files for automake.
+
+	* +thaixfonts.spec.in :
+	Add RPM spec file into the source tree.
+
