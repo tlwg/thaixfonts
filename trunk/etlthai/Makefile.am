@@ -7,7 +7,7 @@ EXTRA_DIST = \
 	etl16-thai.bdf \
 	etl24-thai.bdf
 
-fontdir = $(DESTDIR)@fontdir@
+fontdir = @fontdir@
 
 font_DATA = \
 	etl14-thai.pcf.gz \
