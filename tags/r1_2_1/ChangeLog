@@ -1,0 +1,49 @@
+2001-11-25  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* thaixfonts.spec.in:
+	Fix configure --with-fontdir option. Redefine fontdir to
+	/usr/X11R6/lib/X11/fonts/local. Add BuildArch: section.
+	Filter out dynamic files from manifest.
+	Add fonts.alias manipulation in %post and %postun.
+
+	* Makefile.am:
+	Add thai.alias to installation list, for post processing.
+	Fix uninstall-local script, to remove dir if empty.
+
+	* Makefile.am, dbthaitext/Makefile.am, etlthai/Makefile.am,
+	manop/Makefile.am, nectec/Makefile.am, phaisarn/Makefile.am,
+	yenbut/Makefile.am:
+	Fix fontdir var: remove $(DESTDIR) from assignment, and use it
+	literally in installation scripts instead.
+
+	* configure.in, Makefile.am, poonlap/Makefile.am:
+	Add Poonlap's fonts to the package.
+
+	* thai.alias, -poonlap/fonts.alias, -poonlap/fonts.dir:
+	Move Poonlap's alias info into thai.alias.
+
+	* thaixfonts.spec.in:
+	Update summary to include Poonlap's.
+	Fix many typos in scripts.
+
+	* configure.in:
+	Version 1.2.1
+
+2001-08-24  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* +configure.in, +Makefile.am, +Make.rule,
+	+{dbthaitext|etlthai|manop|nectec|phaisarn|yenbut}/Makefile.am :
+	Use autoconf/automake to manage package.
+
+	* +AUTHORS, +INSTALL, +NEWS, +README, +COPYING, +ChangeLog :
+	Add necessary files for automake.
+
+	* +thaixfonts.spec.in :
+	Add RPM spec file into the source tree.
+
+	* +autogen.sh :
+	Add autogen.sh script for invoking autotools.
+
+	* Makefile.am, {dbthaitext|etlthai|manop|phaisarn|yenbut}/Makefile.am :
+	Add EXTRA_DIST to list source files. Use DESTDIR in fontdir.
+
