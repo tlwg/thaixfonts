@@ -8,7 +8,7 @@ fontdir = @fontdir@
 
 font_DATA = thai.alias
 
-install-data-local:
+install-data-hook:
 	if test -e $(DESTDIR)$(fontdir)/fonts.alias ; then \
 		mv -f $(DESTDIR)$(fontdir)/fonts.alias \
 			$(DESTDIR)$(fontdir)/fonts.alias.old; \
@@ -21,7 +21,7 @@ install-data-local:
 	fi
 	$(MKFONTDIR) $(DESTDIR)$(fontdir)
 
-uninstall-local:
+uninstall-hook:
 	if test -e $(DESTDIR)$(fontdir)/fonts.alias.old ; then \
 		mv -f $(DESTDIR)$(fontdir)/fonts.alias.old \
 			$(DESTDIR)$(fontdir)/fonts.alias; \
