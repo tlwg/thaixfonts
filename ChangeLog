@@ -24,6 +24,7 @@
 
 	* thaixfonts.spec.in:
 	Update summary to include Poonlap's.
+	Fix many typos in scripts.
 
 	* configure.in:
 	Version 1.2.1
