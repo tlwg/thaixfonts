@@ -1,3 +1,7 @@
+2003-09-08  Vee Satayamas <vee@linux.thai.net>
+	* thaixfonts.spec.in
+	Delete fonts.alias and fonts.dir insteads of filtering them.
+
 2003-09-05  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* thaixfonts.spec.in:
