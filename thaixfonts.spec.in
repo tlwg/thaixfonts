@@ -2,12 +2,12 @@
 %define version @VERSION@
 %define release 1
 %define manifest %{_builddir}/%{name}-%{version}-%{release}.manifest
-%define fontdir /usr/share/fonts/TIS-620
+%define fontdir /usr/X11R6/lib/X11/fonts/local
 
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Copyright: Public Domain
+License: Public Domain
 Group: Extensions/Thai/font
 Source: %{name}-%{version}.tar.gz
 URL: http://linux.thai.net/linux-tle/
@@ -26,7 +26,7 @@ and they are free.
 %setup
 
 %build
-%configure --fontdir=${fontdir}
+%configure --with-fontdir=${fontdir}
 make
 
 %install
@@ -72,6 +72,11 @@ rm -rf $RPM_BUILD_ROOT
 #%config
 
 %changelog
+
+* Sun Nov 25 2001 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+- use License: tag instead of Copyright:
+- move fontdir to /usr/X11R6/lib/X11/fonts/local
+- fix configure --with-fontdir option
 
 * Fri Aug 24 2001 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 - use configure script to generate .spec file
