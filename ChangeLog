@@ -2,6 +2,7 @@
 
 	* thai.alias:
 	Add tis620-0 subsetting aliases for tis620-2 fonts.
+	Fix comment sign from # to !
 
 	* configure.in:
 	Version 1.2.2
