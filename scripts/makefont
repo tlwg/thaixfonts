@@ -1,0 +1,19 @@
+#!/bin/sh
+
+mkfontdir
+sort < fonts.dir > f
+mv f fonts.dir
+echo '# alias to provide iso8859-11 support' > thai.alias
+echo >> thai.alias
+cat fonts.dir \
+  | sed -e '/^[0-9]*$/d' \
+  | sed -e 's/^[^ ]* //' \
+  | sed -e 's/^.*$/&	&/' \
+  | sed -e 's/tis620[^	]*	/iso8859-11	/' \
+  >> thai.alias
+rm -f fonts.dir
+echo >> thai.alias
+echo '# alias to provide short names' >> thai.alias
+echo >> thai.alias
+cat ../thai.alias >> thai.alias
+
