@@ -1,0 +1,23 @@
+Dear gental Thai linux users,
+
+I have created the free alternative bitmap fonts for X window system. They were created from scratch with bdfedit (http://hea-www.harvard.edu/~fine/Tech/bdfedit.html) except thai18*.bdf. thai18*.dbf were modified from nectec fonts to use with emacs. You can give me feedback so I can fix these fonts and make them better to use.
+
+There two families of fonts: fixed and emacs. For the emacs family, they are supposed to used with emacs(mule) so BV1, BV2, BD, TONE, AD2, AD3, AV1, AV2, AV3 each occupied one cell. 
+
+Example:
+% emacs -fn -poonlap-emacs-medium-r-normal--20-140-100-100-m-11-tis620-0
+
+in the emacs window, do
+1) key "Esc-x"
+2) input "set-language-environment", enter
+3) input "Thai"
+4) key "Ctrl-]" to switch to Thai mode.
+
+Fixed fonts are supposed to with any application that uses tis620, for example, txiterm.
+
+---
+Poonlap Veerathanabutr
+Poonlap.Veerathanbutr@japan.sun.com
+20 Aug 2001
+
+Note: These fonts are my hobby. There is nothing concerned with Sun Microsystems.
