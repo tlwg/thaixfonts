@@ -12,3 +12,7 @@
 
 	* +autogen.sh :
 	Add autogen.sh script for invoking autotools.
+
+	* Makefile.am, {dbthaitext|etlthai|manop|phaisarn|yenbut}/Makefile.am :
+	Add EXTRA_DIST to list source files. Use DESTDIR in fontdir.
+

@@ -2,7 +2,9 @@ MAINTAINERCLEANFILES = Makefile.in
 
 SUBDIRS = dbthaitext etlthai manop nectec phaisarn yenbut
 
-fontdir = $(DESTDIR)/@fontdir@
+EXTRA_DIST = Make.rule thai.alias
+
+fontdir = $(DESTDIR)@fontdir@
 
 install-data-local:
 	if test -e $(fontdir)/fonts.alias ; then \

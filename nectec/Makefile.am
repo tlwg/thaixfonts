@@ -2,7 +2,13 @@ MAINTAINERCLEANFILES = Makefile.in
 
 @MRULE@
 
-fontdir = @fontdir@
+EXTRA_DIST = \
+	thai18b.bdf \
+	thai18.bdf \
+	thai18bi.bdf \
+	thai18i.bdf
+
+fontdir = $(DESTDIR)@fontdir@
 
 font_DATA = \
 	thai18b.pcf.gz \

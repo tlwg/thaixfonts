@@ -2,7 +2,50 @@ MAINTAINERCLEANFILES = Makefile.in
 
 @MRULE@
 
-fontdir = @fontdir@
+EXTRA_DIST = \
+	angsa10b.bdf \
+	angsa10.bdf \
+	angsa10i.bdf \
+	angsa10z.bdf \
+	angsa12b.bdf \
+	angsa12.bdf \
+	angsa12i.bdf \
+	angsa12z.bdf \
+	angsa14b.bdf \
+	angsa14.bdf \
+	angsa14i.bdf \
+	angsa14z.bdf \
+	angsa16b.bdf \
+	angsa16.bdf \
+	angsa16i.bdf \
+	angsa16z.bdf \
+	angsa18b.bdf \
+	angsa18.bdf \
+	angsa18i.bdf \
+	angsa18z.bdf \
+	angsa24b.bdf \
+	angsa24.bdf \
+	angsa24i.bdf \
+	angsa24z.bdf \
+	Phaisarn97-14.bdf \
+	PnThai.bdf \
+	PsThai.bdf \
+	PtBrowallia12.bdf \
+	PtCUFont.bdf \
+	PtFixed.bdf \
+	PtHelvB12.bdf \
+	PtLight.bdf \
+	PtMule.bdf \
+	PtRamaFont.bdf \
+	PtSanSerifB.bdf \
+	PtSanSerif.bdf \
+	PtThai.bdf \
+	PtThaiCOM.bdf \
+	PtThaiSmall.bdf \
+	ThaiMedia.bdf \
+	ThaiMediaMule.bdf
+
+fontdir = $(DESTDIR)@fontdir@
 
 font_DATA = \
 	angsa10b.pcf.gz \
