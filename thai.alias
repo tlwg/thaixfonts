@@ -31,18 +31,6 @@ thfixed20 -poonlap-fixed-medium-r-normal--20-140-100-100-m-11-tis620-0
 thfixed8 -poonlap-fixed-small-r-normal--8-140-100-100-m-8-tis620-0
 
 ! tis620-0 subsetting aliases for tis620-2 fonts
--phaisarn-ptmule-medium-r-normal--0-0-75-75-c-0-tis620-0 -phaisarn-ptmule-medium-r-normal--0-0-75-75-c-0-tis620-2
--phaisarn-ptmule-medium-r-normal--0-0-75-75-c-0-tis620-0 -phaisarn-ptmule-medium-r-normal--0-0-75-75-c-0-tis620-2
 -phaisarn-ptmule-medium-r-normal--20-200-75-75-c-100-tis620-0 -phaisarn-ptmule-medium-r-normal--20-200-75-75-c-100-tis620-2
--phaisarn-ptmule-medium-r-normal--20-200-75-75-c-100-tis620-0 -phaisarn-ptmule-medium-r-normal--20-200-75-75-c-100-tis620-2
--phaisarn-ptmule-medium-r-normal--20-200-75-75-c-100-tis620-0 -phaisarn-ptmule-medium-r-normal--20-200-75-75-c-100-tis620-2
--phaisarn-sanserif-bold-r-normal--0-0-100-100-m-0-tis620-0 -phaisarn-sanserif-bold-r-normal--0-0-100-100-m-0-tis620-2
--phaisarn-sanserif-bold-r-normal--0-0-100-100-m-0-tis620-0 -phaisarn-sanserif-bold-r-normal--0-0-100-100-m-0-tis620-2
--phaisarn-sanserif-bold-r-normal--8-80-100-100-m-80-tis620-0 -phaisarn-sanserif-bold-r-normal--8-80-100-100-m-80-tis620-2
--phaisarn-sanserif-bold-r-normal--8-80-100-100-m-80-tis620-0 -phaisarn-sanserif-bold-r-normal--8-80-100-100-m-80-tis620-2
--phaisarn-sanserif-bold-r-normal--8-80-100-100-m-80-tis620-0 -phaisarn-sanserif-bold-r-normal--8-80-100-100-m-80-tis620-2
--phaisarn-sanserif-medium-r-normal--0-0-100-100-m-0-tis620-0 -phaisarn-sanserif-medium-r-normal--0-0-100-100-m-0-tis620-2
--phaisarn-sanserif-medium-r-normal--0-0-100-100-m-0-tis620-0 -phaisarn-sanserif-medium-r-normal--0-0-100-100-m-0-tis620-2
--phaisarn-sanserif-medium-r-normal--8-80-100-100-m-80-tis620-0 -phaisarn-sanserif-medium-r-normal--8-80-100-100-m-80-tis620-2
--phaisarn-sanserif-medium-r-normal--8-80-100-100-m-80-tis620-0 -phaisarn-sanserif-medium-r-normal--8-80-100-100-m-80-tis620-2
--phaisarn-sanserif-medium-r-normal--8-80-100-100-m-80-tis620-0 -phaisarn-sanserif-medium-r-normal--8-80-100-100-m-80-tis620-2
+-phaisarn-sanserif-bold-r-normal--14-140-100-100-p-80-tis620-0 -phaisarn-sanserif-bold-r-normal--14-140-100-100-p-80-tis620-2
+-phaisarn-sanserif-medium-r-normal--14-140-100-100-p-80-tis620-0 -phaisarn-sanserif-medium-r-normal--14-140-100-100-p-80-tis620-2
