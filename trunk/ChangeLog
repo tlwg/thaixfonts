@@ -1,3 +1,8 @@
+2002-02-23  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* phaisarn/angsana*.bdf:
+	Relocate extra chars into 8-bit range.
+
 2002-02-19  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 
 	* phaisarn/PtThaiSmall.bdf:
