@@ -17,7 +17,7 @@ Vendor: uecthai
 Packager: Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 BuildArch: noarch
 BuildRoot: /var/tmp/%{name}-%{version}
-Requires: XFree86-xfs, chkfontpath
+Prereq: /usr/sbin/chkfontpath, /usr/X11R6/bin/mkfontdir
 Summary: The collection of Thai X fonts.
 
 %description
@@ -114,7 +114,7 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Sat Mar 30 2002 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 + 1.2.4-2
-- add Requires: section, for proper order of installation via apt
+- add Prereq: section, for proper order of installation via apt
 
 * Fri Feb 23 2002 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 + 1.2.4-1
