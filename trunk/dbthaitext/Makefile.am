@@ -2,7 +2,45 @@ MAINTAINERCLEANFILES = Makefile.in
 
 @MRULE@
 
-fontdir = @fontdir@
+EXTRA_DIST = \
+	dbtt00.bdf \
+	dbtt01.bdf \
+	dbtt02.bdf \
+	dbtt03.bdf \
+	dbtt04.bdf \
+	dbtt05.bdf \
+	dbtt06.bdf \
+	dbtt07.bdf \
+	dbtt08.bdf \
+	dbtt09.bdf \
+	dbtt10.bdf \
+	dbtt11.bdf \
+	dbtt12.bdf \
+	dbtt13.bdf \
+	dbtt14.bdf \
+	dbtt15.bdf \
+	dbtt16.bdf \
+	dbtt17.bdf \
+	dbtt18.bdf \
+	dbtt19.bdf \
+	dbtt20.bdf \
+	dbtt21.bdf \
+	dbtt22.bdf \
+	dbtt23.bdf \
+	dbtt24.bdf \
+	dbtt25.bdf \
+	dbtt26.bdf \
+	dbtt27.bdf \
+	dbtt28.bdf \
+	dbtt29.bdf \
+	dbtt30.bdf \
+	dbtt31.bdf \
+	dbtt32.bdf \
+	dbtt33.bdf \
+	dbtt34.bdf \
+	dbtt35.bdf
+
+fontdir = $(DESTDIR)@fontdir@
 
 font_DATA = \
 	dbtt00.pcf.gz \

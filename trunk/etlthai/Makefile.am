@@ -2,7 +2,12 @@ MAINTAINERCLEANFILES = Makefile.in
 
 @MRULE@
 
-fontdir = @fontdir@
+EXTRA_DIST = \
+	etl14-thai.bdf \
+	etl16-thai.bdf \
+	etl24-thai.bdf
+
+fontdir = $(DESTDIR)@fontdir@
 
 font_DATA = \
 	etl14-thai.pcf.gz \
