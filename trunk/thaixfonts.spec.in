@@ -8,7 +8,7 @@
 Name: %{name}
 Version: %{version}
 Release: %{release}
-License: Public Domain
+License: freely redistributable
 Group: Extensions/Thai/font
 Source: %{name}-%{version}.tar.gz
 URL: http://linux.thai.net/linux-tle/
@@ -112,6 +112,10 @@ rm -rf $RPM_BUILD_ROOT
 #%config
 
 %changelog
+* Fri Sep 05 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
++ 1.2.4-4
+- fix License term, as noticed by Vee Satayamas.
+
 * Mon Jan 13 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
 + 1.2.4-3
 - fix "%install" mess in new rpmbuild version.
