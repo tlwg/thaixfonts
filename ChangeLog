@@ -7,6 +7,13 @@
 	Fix thai.alias according to recent changes in PtThaiSmall.bdf
 	and PtSanSerif.bdf
 
+	* thaixfonts.spec.in:
+	Check-in changes made to RPM spec during TLE 4.1 development.
+	(Mainly: automatically generate fonts.alias from alias files
+	stored in /etc/X11/fonts [borrowed from debian] instead of
+	trying to merge old and new fonts.alias, which would otherwise
+	cause problem with RPM scriptlet execution order)
+
 2002-02-19  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 
 	* phaisarn/PtThaiSmall.bdf:
