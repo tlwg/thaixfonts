@@ -4,8 +4,11 @@ COMMENT         Created & Calculated by Phaisarn Techajaruwong,TITech1997
 COMMENT 2000.04.26 Theppitak Karoonboonyanan:
 COMMENT            - ThaiWindows extended character adjusted
 COMMENT            - encoding changed from iso8859-11 to tis620-2
-FONT -phaisarn-sanserif-bold-r-normal--8-80-100-100-m-80-tis620-2
-SIZE 12 100 100
+COMMENT 2002.02.19 Theppitak Karoonboonyanan:
+COMMENT            - fix size field from 8 px to 14 px, to reflect actual size
+COMMENT            - change spacing field from "m" to "p"
+FONT -phaisarn-sanserif-bold-r-normal--14-140-100-100-p-80-tis620-2
+SIZE 14 100 100
 FONTBOUNDINGBOX 16 20 -8 -5
 STARTPROPERTIES 22
 FOUNDRY "phaisarn"
@@ -14,11 +17,11 @@ WEIGHT_NAME "bold"
 SLANT "r"
 SETWIDTH_NAME "normal"
 ADD_STYLE_NAME ""
-PIXEL_SIZE 8
-POINT_SIZE 80
+PIXEL_SIZE 14
+POINT_SIZE 140
 RESOLUTION_X 100
 RESOLUTION_Y 100
-SPACING "m"
+SPACING "p"
 AVERAGE_WIDTH 20
 CHARSET_REGISTRY "tis620"
 CHARSET_ENCODING "2"
