@@ -1,0 +1,6 @@
+for f in *.bdf ; do
+  pcffile=../pcf/`echo $f | sed -e 's/\..*//'`.pcf
+  bdftopcf -o $pcffile $f
+  gzip -f -9 $pcffile
+done
+
