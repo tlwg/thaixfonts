@@ -1,6 +1,6 @@
 MAINTAINERCLEANFILES = Makefile.in
 
-SUBDIRS = dbthaitext etlthai manop nectec phaisarn yenbut
+SUBDIRS = dbthaitext etlthai manop nectec phaisarn poonlap yenbut
 
 EXTRA_DIST = Make.rule
 

@@ -19,9 +19,9 @@ BuildRoot: /var/tmp/%{name}-%{version}
 Summary: The collection of Thai X fonts.
 
 %description
-Thai X fonts included here are dbthaitext, Phaisarn's fonts, Dr.Manop's fonts,
-Khun Voradej's fonts and NECTEC fonts. These fonts were collected from Internet
-and they are free.
+Thai X fonts included here are dbthaitext, Phaisarn's fonts, Manop's fonts,
+Voradej's fonts, NECTEC fonts, and Poonlap's fonts. These fonts were
+collected from Internet and they are free.
 
 %prep
 %setup
@@ -109,6 +109,7 @@ rm -rf $RPM_BUILD_ROOT
 - add BuildArch:
 - filter out dynamic files from manifest
 - add fonts.alias manipulation in %post and %postun
+- update summary to include Poonlap's
 
 * Fri Aug 24 2001 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 - use configure script to generate .spec file
