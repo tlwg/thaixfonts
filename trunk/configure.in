@@ -1,5 +1,5 @@
 AC_INIT(thai.alias)
-AM_INIT_AUTOMAKE(thaixfonts, 0.2)
+AM_INIT_AUTOMAKE(thaixfonts, 0.2.1)
 
 AC_PROG_INSTALL
 AC_PROG_LN_S
