@@ -1,0 +1,31 @@
+X11 Release 5 or later version allows 8-bit character set to be used.
+The thai9x13 font takes advantage of the feature.
+
+The fonts were built by using Borland's stroked font editor, and then
+converted to BDF format. It contains most of Thai symbols and letters
+(if not all) according to TIS-620 code.
+
+If X server runs on the same machine where the fonts live, the
+following steps will typically make fonts available to X server.
+
+- Create a subdirectory, ~/xfont (or any other name).
+- Copy fonts to the directory.
+- Convert font bdf format to pcf format by the following commands:
+
+	bdftopcf thai8x13.bdf > thai8x13.pcf
+	bdftopcf thai9x13.bdf > thai9x13.pcf
+
+- Make a font directory file, fonts.dir, in the directory with the command:
+ 
+	mkfontdir ~/xfont
+    
+- Make path of the font subdirectory known to the X server with command:
+
+	xset +fp ~/xfont.
+
+Now the fonts should be usable to xterm or other applications.
+For example,
+		xterm -fn thai8x13
+
+The procedure may vary from site to site and may not work at all if
+X terminal is used.  Please consult your gurus at your site for details.
