@@ -6,8 +6,8 @@ COMMENT  license, and trademark restrictions as the original font.  The
 COMMENT  author and distributors of xbdfdump disclaim all liability for
 COMMENT  misuse of the program or its output.
 COMMENT  
-FONT -Phaisarn-Browallia-Medium-R-Normal--12-120-75-75-C-100-tis620-0
-SIZE 12 75 75
+FONT -Phaisarn-Browallia-Medium-R-Normal--16-160-75-75-P-100-tis620-0
+SIZE 16 75 75
 FONTBOUNDINGBOX 22 22 -7 -6
 STARTPROPERTIES 21
 FONTNAME_REGISTRY ""
@@ -17,11 +17,11 @@ WEIGHT_NAME "Medium"
 SLANT "R"
 SETWIDTH_NAME "Normal"
 ADD_STYLE_NAME ""
-PIXEL_SIZE 12
-POINT_SIZE 120
+PIXEL_SIZE 16
+POINT_SIZE 160
 RESOLUTION_X 75
 RESOLUTION_Y 75
-SPACING "C"
+SPACING "P"
 AVERAGE_WIDTH 100
 CHARSET_REGISTRY "tis620"
 CHARSET_ENCODING "0"
