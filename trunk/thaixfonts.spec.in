@@ -41,6 +41,9 @@ mkdir -p $RPM_BUILD_ROOT%{aliasdir}
 mv -f $RPM_BUILD_ROOT%{fontdir}/thai.alias \
   $RPM_BUILD_ROOT%{aliasdir}/thaixfonts.alias
 
+rm -f $RPM_BUILD_ROOT/%{fontdir}/fonts.dir \
+   $RPM_BUILD_ROOT/%{fontdir}/fonts.alias
+
 # __os_install_post is implicitly expanded after the
 # install section... do it now, and then disable it,
 # so all work is done before building manifest.
@@ -55,7 +58,6 @@ rm -f %{manifest}
 find . -type d \
         | sed '1,2d;s,^\.,\%attr(-\,root\,root) \%dir ,' >> %{manifest}
 find . -type f \
-        | sed '/\/fonts.dir/d;/\/fonts.alias/d' \
         | sed 's,^\.,\%attr(-\,root\,root) ,' >> %{manifest}
 find . -type l \
         | sed 's,^\.,\%attr(-\,root\,root) ,' >> %{manifest}
@@ -112,6 +114,9 @@ rm -rf $RPM_BUILD_ROOT
 #%config
 
 %changelog
+* Mon Sep 08 2003 Vee Satayamas <vee@linux.thai.net>
+- Delete fonts.alias and fonts.dir insteads of filtering them.
+
 * Fri Sep 05 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
 + 1.2.4-4
 - fix License term, as noticed by Vee Satayamas.
