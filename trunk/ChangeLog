@@ -3,6 +3,10 @@
 	* phaisarn/angsana*.bdf:
 	Relocate extra chars into 8-bit range.
 
+	* thai.alias:
+	Fix thai.alias according to recent changes in PtThaiSmall.bdf
+	and PtSanSerif.bdf
+
 2002-02-19  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 
 	* phaisarn/PtThaiSmall.bdf:
