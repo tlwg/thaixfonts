@@ -8,6 +8,9 @@
 	Fix font size property from 8 px to 14 px, to reflect actual size.
 	Change font spacing tag from "m" to "p".
 
+	* configure.in:
+	Version 1.2.2
+
 2002-01-04  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 
 	* thai.alias:
