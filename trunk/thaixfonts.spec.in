@@ -27,7 +27,7 @@ collected from Internet and they are free.
 %setup
 
 %build
-%configure --with-fontdir=${fontdir}
+%configure --with-fontdir=$RPM_BUILD_ROOT%{fontdir}
 make
 
 %install
@@ -49,45 +49,45 @@ rm -f %{manifest}
 find . -type d \
         | sed '1,2d;s,^\.,\%attr(-\,root\,root) \%dir ,' >> %{manifest}
 find . -type f \
-	| sed 'g,^fonts.dir,d;g,fonts.alias,d' \
+	| sed '/^fonts.dir/d;/fonts.alias/d' \
         | sed 's,^\.,\%attr(-\,root\,root) ,' >> %{manifest}
 find . -type l \
         | sed 's,^\.,\%attr(-\,root\,root) ,' >> %{manifest}
 
 %post
-if test -e $RPM_BUILDROOT${fontdir}/fonts.alias ; then
-	mv -f $RPM_BUILDROOT${fontdir}/fonts.alias \
-		$RPM_BUILDROOT${fontdir}/fonts.alias.old
-	cat $RPM_BUILDROOT${fontdir}/fonts.alias.old \
-		$RPM_BUILDROOT${fontdir}/thai.alias \
-		> $RPM_BUILDROOT${fontdir}/fonts.alias
+if test -e $RPM_BUILD_ROOT%{fontdir}/fonts.alias ; then
+	mv -f $RPM_BUILD_ROOT%{fontdir}/fonts.alias \
+		$RPM_BUILD_ROOT%{fontdir}/fonts.alias.old
+	cat $RPM_BUILD_ROOT%{fontdir}/fonts.alias.old \
+		$RPM_BUILD_ROOT%{fontdir}/thai.alias \
+		> $RPM_BUILD_ROOT%{fontdir}/fonts.alias
 else
-	cp -f $RPM_BUILDROOT${fontdir}/thai.alias \
-		$RPM_BUILDROOT${fontdir}/fonts.alias
+	cp -f $RPM_BUILD_ROOT%{fontdir}/thai.alias \
+		$RPM_BUILD_ROOT%{fontdir}/fonts.alias
 fi
-mkfontdir $RPM_BUILDROOT${fontdir}
-if (/usr/sbin/chkfontpath --list | grep $RPM_BUILDROOT${fontdir}) ; then
-	/usr/sbin/chkfontpath --remove $RPM_BUILDROOT${fontdir}
+mkfontdir $RPM_BUILD_ROOT%{fontdir}
+if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{fontdir}) ; then
+	/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{fontdir}
 fi
-/usr/sbin/chkfontpath --add $RPM_BUILDROOT${fontdir}
+/usr/sbin/chkfontpath --add $RPM_BUILD_ROOT%{fontdir}
 
 %postun
-if test -e $RPM_BUILDROOT${fontdir}/fonts.alias.old ; then
-	mv -f $RPM_BUILDROOT${fontdir}/fonts.alias.old \
-		$RPM_BUILDROOT${fontdir}/fonts.alias
+if test -e $RPM_BUILD_ROOT%{fontdir}/fonts.alias.old ; then
+	mv -f $RPM_BUILD_ROOT%{fontdir}/fonts.alias.old \
+		$RPM_BUILD_ROOT%{fontdir}/fonts.alias
 else
-	rm -f $RPM_BUILDROOT${fontdir}/fonts.alias
+	rm -f $RPM_BUILD_ROOT%{fontdir}/fonts.alias
 fi
-mkfontdir $RPM_BUILDROOT${fontdir}
-if test `head -1 $RPM_BUILDROOT${fontdir}/fonts.dir` -eq 0; then
-	rm -f $RPM_BUILDROOT${fontdir}/fonts.dir
-	rmdir $RPM_BUILDROOT${fontdir}
-	/usr/sbin/chkfontpath --remove $RPM_BUILDROOT${fontdir}
+mkfontdir $RPM_BUILD_ROOT%{fontdir}
+if test `head -1 $RPM_BUILD_ROOT%{fontdir}/fonts.dir` -eq 0; then
+	rm -f $RPM_BUILD_ROOT%{fontdir}/fonts.dir
+	rmdir $RPM_BUILD_ROOT%{fontdir}
+	/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{fontdir}
 else
-	if (/usr/sbin/chkfontpath --list | grep $RPM_BUILDROOT${fontdir}) ; then
-		/usr/sbin/chkfontpath --remove $RPM_BUILDROOT${fontdir}
+	if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{fontdir}) ; then
+		/usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{fontdir}
 	fi
-	/usr/sbin/chkfontpath --add $RPM_BUILDROOT${fontdir}
+	/usr/sbin/chkfontpath --add $RPM_BUILD_ROOT%{fontdir}
 fi
 
 %clean
