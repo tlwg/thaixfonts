@@ -1,6 +1,6 @@
 %define name thaixfonts
 %define version @VERSION@
-%define release 3
+%define release 4
 %define manifest %{_builddir}/%{name}-%{version}-%{release}.manifest
 %define fontdir /usr/X11R6/lib/X11/fonts/local
 %define aliasdir /etc/X11/fonts/local
