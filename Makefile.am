@@ -2,25 +2,31 @@ MAINTAINERCLEANFILES = Makefile.in
 
 SUBDIRS = dbthaitext etlthai manop nectec phaisarn yenbut
 
-EXTRA_DIST = Make.rule thai.alias
+EXTRA_DIST = Make.rule
 
-fontdir = $(DESTDIR)@fontdir@
+fontdir = @fontdir@
+
+font_DATA = thai.alias
 
 install-data-local:
-	if test -e $(fontdir)/fonts.alias ; then \
-		mv -f $(fontdir)/fonts.alias $(fontdir)/fonts.alias.old; \
-		cat $(fontdir)/fonts.alias.old $(top_srcdir)/thai.alias \
-			> $(fontdir)/fonts.alias; \
+	if test -e $(DESTDIR)$(fontdir)/fonts.alias ; then \
+		mv -f $(DESTDIR)$(fontdir)/fonts.alias \
+			$(DESTDIR)$(fontdir)/fonts.alias.old; \
+		cat $(DESTDIR)$(fontdir)/fonts.alias.old \
+			$(DESTDIR)$(fontdir)/thai.alias \
+			> $(DESTDIR)$(fontdir)/fonts.alias; \
 	else \
-		cp -f $(top_srcdir)/thai.alias $(fontdir)/fonts.alias; \
-	fi; \
-	$(MKFONTDIR) $(fontdir)
+		cp -f $(DESTDIR)$(fontdir)/thai.alias \
+			$(DESTDIR)$(fontdir)/fonts.alias; \
+	fi
+	$(MKFONTDIR) $(DESTDIR)$(fontdir)
 
 uninstall-local:
-	if test -e $(fontdir)/fonts.alias.old ; then \
-		mv -f $(fontdir)/fonts.alias.old $(fontdir)/fonts.alias; \
+	if test -e $(DESTDIR)$(fontdir)/fonts.alias.old ; then \
+		mv -f $(DESTDIR)$(fontdir)/fonts.alias.old \
+			$(DESTDIR)$(fontdir)/fonts.alias; \
 	else \
-		rm -f $(fontdir)/fonts.alias; \
-	fi; \
-	$(MKFONTDIR) $(fontdir)
+		rm -f $(DESTDIR)$(fontdir)/fonts.alias; \
+	fi
+	$(MKFONTDIR) $(DESTDIR)$(fontdir)
 

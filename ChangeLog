@@ -3,6 +3,17 @@
 	* thaixfonts.spec.in:
 	Fix configure --with-fontdir option. Redefine fontdir to
 	/usr/X11R6/lib/X11/fonts/local. Add BuildArch: section.
+	Filter out dynamic files from manifest.
+	Add fonts.alias manipulation in %post and %postun.
+
+	* Makefile.am:
+	Add thai.alias to installation list, for post processing.
+
+	* Makefile.am, dbthaitext/Makefile.am, etlthai/Makefile.am,
+	manop/Makefile.am, nectec/Makefile.am, phaisarn/Makefile.am,
+	yenbut/Makefile.am:
+	Fix fontdir var: remove $(DESTDIR) from assignment, and use it
+	literally in installation scripts instead.
 
 	* configure.in:
 	Version 0.2.1

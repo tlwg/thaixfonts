@@ -8,7 +8,7 @@ EXTRA_DIST = \
 	thai8x16.bdf \
 	thai8x20.bdf 
 
-fontdir = $(DESTDIR)@fontdir@
+fontdir = @fontdir@
 
 font_DATA = \
 	thai6x14.pcf.gz \

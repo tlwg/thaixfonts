@@ -45,7 +45,7 @@ EXTRA_DIST = \
 	ThaiMedia.bdf \
 	ThaiMediaMule.bdf
 
-fontdir = $(DESTDIR)@fontdir@
+fontdir = @fontdir@
 
 font_DATA = \
 	angsa10b.pcf.gz \

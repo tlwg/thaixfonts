@@ -40,7 +40,7 @@ EXTRA_DIST = \
 	dbtt34.bdf \
 	dbtt35.bdf
 
-fontdir = $(DESTDIR)@fontdir@
+fontdir = @fontdir@
 
 font_DATA = \
 	dbtt00.pcf.gz \

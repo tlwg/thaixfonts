@@ -49,17 +49,35 @@ rm -f %{manifest}
 find . -type d \
         | sed '1,2d;s,^\.,\%attr(-\,root\,root) \%dir ,' >> %{manifest}
 find . -type f \
+	| sed 'g,^fonts.dir,d;g,fonts.alias,d' \
         | sed 's,^\.,\%attr(-\,root\,root) ,' >> %{manifest}
 find . -type l \
         | sed 's,^\.,\%attr(-\,root\,root) ,' >> %{manifest}
 
 %post
+if test -e $RPM_BUILDROOT${fontdir}/fonts.alias ; then
+	mv -f $RPM_BUILDROOT${fontdir}/fonts.alias \
+		$RPM_BUILDROOT${fontdir}/fonts.alias.old
+	cat $RPM_BUILDROOT${fontdir}/fonts.alias.old \
+		$RPM_BUILDROOT${fontdir}/thai.alias \
+		> $RPM_BUILDROOT${fontdir}/fonts.alias
+else
+	cp -f $RPM_BUILDROOT${fontdir}/thai.alias \
+		$RPM_BUILDROOT${fontdir}/fonts.alias
+fi
+mkfontdir $RPM_BUILDROOT${fontdir}
 if (/usr/sbin/chkfontpath --list | grep $RPM_BUILDROOT${fontdir}) ; then
 	/usr/sbin/chkfontpath --remove $RPM_BUILDROOT${fontdir}
 fi
 /usr/sbin/chkfontpath --add $RPM_BUILDROOT${fontdir}
 
 %postun
+if test -e $RPM_BUILDROOT${fontdir}/fonts.alias.old ; then
+	mv -f $RPM_BUILDROOT${fontdir}/fonts.alias.old \
+		$RPM_BUILDROOT${fontdir}/fonts.alias
+else
+	rm -f $RPM_BUILDROOT${fontdir}/fonts.alias
+fi
 /usr/sbin/chkfontpath --remove $RPM_BUILDROOT${fontdir}
 
 %clean
@@ -79,6 +97,8 @@ rm -rf $RPM_BUILD_ROOT
 - move fontdir to /usr/X11R6/lib/X11/fonts/local
 - fix configure --with-fontdir option
 - add BuildArch:
+- filter out dynamic files from manifest
+- add fonts.alias manipulation in %post and %postun
 
 * Fri Aug 24 2001 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 - use configure script to generate .spec file
