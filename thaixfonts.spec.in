@@ -78,7 +78,17 @@ if test -e $RPM_BUILDROOT${fontdir}/fonts.alias.old ; then
 else
 	rm -f $RPM_BUILDROOT${fontdir}/fonts.alias
 fi
-/usr/sbin/chkfontpath --remove $RPM_BUILDROOT${fontdir}
+mkfontdir $RPM_BUILDROOT${fontdir}
+if test `head -1 $RPM_BUILDROOT${fontdir}/fonts.dir` -eq 0; then
+	rm -f $RPM_BUILDROOT${fontdir}/fonts.dir
+	rmdir $RPM_BUILDROOT${fontdir}
+	/usr/sbin/chkfontpath --remove $RPM_BUILDROOT${fontdir}
+else
+	if (/usr/sbin/chkfontpath --list | grep $RPM_BUILDROOT${fontdir}) ; then
+		/usr/sbin/chkfontpath --remove $RPM_BUILDROOT${fontdir}
+	fi
+	/usr/sbin/chkfontpath --add $RPM_BUILDROOT${fontdir}
+fi
 
 %clean
 rm -f %{manifest}

@@ -29,4 +29,8 @@ uninstall-local:
 		rm -f $(DESTDIR)$(fontdir)/fonts.alias; \
 	fi
 	$(MKFONTDIR) $(DESTDIR)$(fontdir)
+	if test `head -1 $(DESTDIR)$(fontdir)/fonts.dir` -eq 0; then \
+		$(RM) $(DESTDIR)$(fontdir)/fonts.dir; \
+		$(RMDIR) $(DESTDIR)$(fontdir); \
+	fi
 
