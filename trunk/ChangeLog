@@ -10,3 +10,5 @@
 	* +thaixfonts.spec.in :
 	Add RPM spec file into the source tree.
 
+	* +autogen.sh :
+	Add autogen.sh script for invoking autotools.
