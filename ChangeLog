@@ -14,6 +14,10 @@
 	trying to merge old and new fonts.alias, which would otherwise
 	cause problem with RPM scriptlet execution order)
 
+	* phaisarn/PtBrowallia12.bdf:
+	Change font size from 12 Px to 16 Px (actual ascent).
+	Change spacing from "C" to "P".
+
 2002-02-19  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 
 	* phaisarn/PtThaiSmall.bdf:
