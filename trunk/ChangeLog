@@ -18,6 +18,9 @@
 	Change font size from 12 Px to 16 Px (actual ascent).
 	Change spacing from "C" to "P".
 
+	* configure.in:
+	Version 1.2.4
+
 2002-02-19  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 
 	* phaisarn/PtThaiSmall.bdf:
