@@ -1,7 +1,7 @@
 2002-03-30  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 
 	* thaixfonts.spec.in:
-	Add Requires: section, for proper order of installation via apt.
+	Add Prereq: section, for proper order of installation via apt.
 	(Thanks to Sadit)
 
 2002-02-23  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
