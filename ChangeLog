@@ -1,3 +1,9 @@
+2002-02-19  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* phaisarn/PtThaiSmall.bdf:
+	Fix font size property from 20 px to 14 px, to reflect actual size.
+	Change font spacing tag from "C" to "P".
+
 2002-01-04  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 
 	* thai.alias:
