@@ -8,6 +8,7 @@
 
 	* Makefile.am:
 	Add thai.alias to installation list, for post processing.
+	Fix uninstall-local script, to remove dir if empty.
 
 	* Makefile.am, dbthaitext/Makefile.am, etlthai/Makefile.am,
 	manop/Makefile.am, nectec/Makefile.am, phaisarn/Makefile.am,
