@@ -2,7 +2,7 @@ MAINTAINERCLEANFILES = Makefile.in
 
 SUBDIRS = dbthaitext etlthai manop nectec phaisarn poonlap yenbut
 
-EXTRA_DIST = Make.rule
+EXTRA_DIST = Make.rule thai.alias
 
 fontdir = @fontdir@
 
