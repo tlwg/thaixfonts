@@ -4,6 +4,9 @@
 	Use install-data-hook instead of install-data-local target,
 	and uninstall-hook instead of uninstall-local as well.
 
+	* thaixfonts.spec.in:
+	Fix "%install" mess in new rpmbuild version.
+
 2002-03-30  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 
 	* thaixfonts.spec.in:

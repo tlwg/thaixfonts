@@ -1,6 +1,6 @@
 %define name thaixfonts
 %define version @VERSION@
-%define release 1
+%define release 3
 %define manifest %{_builddir}/%{name}-%{version}-%{release}.manifest
 %define fontdir /usr/X11R6/lib/X11/fonts/local
 %define aliasdir /etc/X11/fonts/local
@@ -42,7 +42,7 @@ mv -f $RPM_BUILD_ROOT%{fontdir}/thai.alias \
   $RPM_BUILD_ROOT%{aliasdir}/thaixfonts.alias
 
 # __os_install_post is implicitly expanded after the
-# %install section... do it now, and then disable it,
+# install section... do it now, and then disable it,
 # so all work is done before building manifest.
 
 %{?__os_install_post}
@@ -112,6 +112,10 @@ rm -rf $RPM_BUILD_ROOT
 #%config
 
 %changelog
+* Mon Jan 13 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
++ 1.2.4-3
+- fix "%install" mess in new rpmbuild version.
+
 * Sat Mar 30 2002 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 + 1.2.4-2
 - add Prereq: section, for proper order of installation via apt
