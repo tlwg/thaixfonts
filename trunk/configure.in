@@ -23,7 +23,8 @@ if test "x$GZIP" = "xno" ; then
 fi
 
 AC_ARG_WITH(fontdir,
-  [  --with-fontdir=DIR    font directory in DIR [/usr/X11R6/lib/X11/fonts/misc]],
+  [AC_HELP_STRING([--with-fontdir=DIR],
+                  [font directory in DIR [/usr/X11R6/lib/X11/fonts/misc]])],
   [fontdir="$withval"], [fontdir=/usr/X11R6/lib/X11/fonts/misc])
 AC_MSG_CHECKING(--with-fontdir)
 AC_MSG_RESULT("$fontdir")                                                                                                           

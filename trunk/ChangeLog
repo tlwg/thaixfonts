@@ -1,3 +1,8 @@
+2005-10-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in:
+	Formatted configure options help strings with AC_HELP_STRING().
+
 2003-09-08  Vee Satayamas <vee@linux.thai.net>
 	* thaixfonts.spec.in
 	Delete fonts.alias and fonts.dir insteads of filtering them.
