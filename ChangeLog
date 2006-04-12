@@ -1,3 +1,7 @@
+2006-04-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, Makefile.am: Removed dbthaitext from distribution.
+
 2005-10-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
 
 	* configure.in:

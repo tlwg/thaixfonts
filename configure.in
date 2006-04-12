@@ -35,7 +35,6 @@ AC_SUBST_FILE(MRULE)
 
 AC_OUTPUT(
   Makefile
-  dbthaitext/Makefile
   etlthai/Makefile
   manop/Makefile
   nectec/Makefile
