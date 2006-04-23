@@ -1,0 +1,12 @@
+thaixfonts (1.2.5-1) unstable; urgency=low
+
+  * New maintainer. Closes: #357878, #357879, #357880, #357881, #357882
+  * New upstream release.
+    - dropped all fonts with unclear licenses
+    - new poonlap fonts
+  * Rebuilt xfonts-thai, xfonts-thai-{etl,nectec,manop,vor} from single
+    upstream source.
+  * Introduced xfonts-thai-poonlap.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sun, 23 Apr 2006 20:43:51 +0700
+

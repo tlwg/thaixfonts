@@ -1,0 +1,28 @@
+This package was first individually debianized by Chanop Silpa-Anan 
+<chanop@debian.org> during 2000-2004, and later debianized from single 
+upstream source by Theppitak Karoonboonyanan <thep@linux.thai.net> on
+Sun, 23 Apr 2006 20:43:51 +0700.
+
+It was downloaded from ftp://linux.thai.net/pub/thailinux/software/thaixfonts/
+
+Upstream Author:
+
+  Poonlap Veerathanabutr <Poonlap.Veerathanbutr@japan.sun.com>
+
+Copyright:
+
+  Copyright (c) 2001, Poonlap Veerathanabutr
+
+  License to copy and distribute for both commercial and
+  non-commercial use is herby granted, provided this notice
+  is preserved.
+
+  Poonlap.Veerathanabutr@japan.sun.com
+  This font is my hobby, there is nothing related with Sun Microsystems.
+  The motivation is I want to use some Thai font with emacs but I don't
+  like the default one. This font is a bit big but the "head" of thai shows
+  apparently which I think it is important.
+
+  Produced with bdfedit, a tcl/tk font editing program
+  written by Thomas A. Fine  
+
