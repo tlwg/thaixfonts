@@ -9,12 +9,16 @@ fontdir = @fontdir@
 font_DATA = thai.alias
 
 install-data-hook:
+	@if test -n "$(DESTDIR)" ; then \
+	  echo "***" ; \
+	  echo "*** Warning: Seems to be binary package building." ; \
+	  echo "***          So, font list/alias is not generated" ; \
+	  echo "***" ; \
+	  exit 0; \
+	fi
 	if test -e $(DESTDIR)$(fontdir)/fonts.alias ; then \
-		mv -f $(DESTDIR)$(fontdir)/fonts.alias \
-			$(DESTDIR)$(fontdir)/fonts.alias.old; \
-		cat $(DESTDIR)$(fontdir)/fonts.alias.old \
-			$(DESTDIR)$(fontdir)/thai.alias \
-			> $(DESTDIR)$(fontdir)/fonts.alias; \
+		cat $(DESTDIR)$(fontdir)/thai.alias \
+			>> $(DESTDIR)$(fontdir)/fonts.alias; \
 	else \
 		cp -f $(DESTDIR)$(fontdir)/thai.alias \
 			$(DESTDIR)$(fontdir)/fonts.alias; \
