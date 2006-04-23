@@ -1,5 +1,12 @@
 2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
 
+	* Makefile.am: Do not generate fonts dir/alias when building binary
+	packages with non-null DESTDIR.  Appended thai.alias to existing
+	fonts.dir with a single cat command, instead of first renaming old
+	file.
+
+2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
 	* configure.in: Set default font dir to Xorg 7 directory.
 
 2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
