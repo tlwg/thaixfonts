@@ -39,7 +39,6 @@ AC_OUTPUT(
   manop/Makefile
   nectec/Makefile
   poonlap/Makefile
-  phaisarn/Makefile
   yenbut/Makefile
   thaixfonts.spec
 )
