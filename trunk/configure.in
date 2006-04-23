@@ -24,8 +24,8 @@ fi
 
 AC_ARG_WITH(fontdir,
   [AC_HELP_STRING([--with-fontdir=DIR],
-                  [font directory in DIR [/usr/share/fonts/X11/misc]])],
-  [fontdir="$withval"], [fontdir=/usr/share/fonts/X11/misc])
+                  [font directory in DIR [PREFIX/share/fonts/X11/misc]])],
+  [fontdir="$withval"], [fontdir=\$\{prefix\}/share/fonts/X11/misc])
 AC_MSG_CHECKING(--with-fontdir)
 AC_MSG_RESULT("$fontdir")                                                                                                           
 AC_SUBST(fontdir)

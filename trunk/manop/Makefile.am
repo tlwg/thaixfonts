@@ -1,4 +1,4 @@
-MAINTAINERCLEANFILES = Makefile.in
+DISTCLEANFILES = *.pcf.gz
 
 @MRULE@
 
@@ -7,8 +7,6 @@ EXTRA_DIST = \
 	thai7x18.bdf \
 	thai8x16.bdf \
 	thai8x20.bdf 
-
-fontdir = @fontdir@
 
 font_DATA = \
 	thai6x14.pcf.gz \
