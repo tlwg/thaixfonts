@@ -1,0 +1,60 @@
+Source: thaixfonts
+Section: x11
+Priority: optional
+Maintainer: Theppitak Karoonboonyanan <thep@linux.thai.net>
+Build-Depends: debhelper (>= 5.0.31)
+Build-Depends-Indep: autotools-dev, xfonts-utils
+Standards-Version: 3.6.2
+
+Package: xfonts-thai
+Architecture: all
+Depends: xfonts-thai-nectec, xfonts-thai-etl, xfonts-thai-manop, ttf-thai-tlwg
+Recommends: xfonts-thai-vor, xfonts-thai-poonlap
+Suggests: xserver | xfs, xfonts-intl-asian
+Description: A collection of Thai fonts for X
+ This package depends on all the Thai fonts packages in Debian.
+
+Package: xfonts-thai-nectec
+Architecture: all
+Depends: ${misc:Depends}
+Conflicts: xfonts-thai (<= 0.2-1)
+Suggests: xserver | xfs
+Description: Thai fixed fonts for X from Nectec
+ xfonts-thai-nectec provides one set of Thai fixed fonts for X. This font looks
+ good in xiterm+thai.
+
+Package: xfonts-thai-etl
+Architecture: all
+Depends: ${misc:Depends}
+Conflicts: xfonts-thai (<=0.2-1)
+Suggests: xserver | xfs
+Description: Thai etl fonts for X
+ xfonts-thai-etl provides 3 Thai etl fonts for X. Emacs/Mule needs these
+ fonts to display Thai.
+
+Package: xfonts-thai-manop
+Architecture: all
+Depends: ${misc:Depends}
+Conflicts: xfonts-thai (<= 0.2-1)
+Suggests: xserver | xfs
+Description: Dr.Manop Wongsaisuwan's bitmap fonts for X
+ xfonts-thai-manop provides 4 Thai bitmap fonts for X.
+ Dr.Manop Wongsaisuwan created these fonts while he was in the US.
+
+Package: xfonts-thai-vor
+Architecture: all
+Depends: ${misc:Depends}
+Conflicts: xfonts-thai (<= 0.2-1)
+Suggests: xserver | xfs
+Description: Voradesh Yenbut bitmap fonts for X
+ Voradesh Yenbut created two bitmap fonts for X back in 1992.
+ These fonts are best with xiterm+thai.
+
+Package: xfonts-thai-poonlap
+Architecture: all
+Depends: ${misc:Depends}
+Conflicts: xfonts-thai (<= 0.2-1)
+Suggests: xserver | xfs
+Description: Poonlap Veerathanabutr bitmap fonts for X
+ xfonts-thai-poonlap provides 14 Thai bitmap fonts for X and Emacs.
+ These fonts are good for xiterm+thai and emacs.
