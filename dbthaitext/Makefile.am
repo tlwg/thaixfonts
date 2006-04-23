@@ -1,4 +1,4 @@
-MAINTAINERCLEANFILES = Makefile.in
+DISTCLEANFILES = *.pcf.gz
 
 @MRULE@
 
@@ -39,8 +39,6 @@ EXTRA_DIST = \
 	dbtt33.bdf \
 	dbtt34.bdf \
 	dbtt35.bdf
-
-fontdir = @fontdir@
 
 font_DATA = \
 	dbtt00.pcf.gz \
