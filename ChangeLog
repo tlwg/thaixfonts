@@ -1,5 +1,10 @@
 2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
 
+	* configure.in, NEWS:
+	=== Version 1.2.5 ===
+
+2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
 	Clean-ups to pass 'make distcheck'
 
 	* configure.in: Used ${prefix} in $fontdir.
