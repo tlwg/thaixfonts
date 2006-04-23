@@ -1,0 +1,178 @@
+%define name thaixfonts
+%define version @VERSION@
+%define release 4
+%define manifest %{_builddir}/%{name}-%{version}-%{release}.manifest
+%define fontdir /usr/X11R6/lib/X11/fonts/local
+%define aliasdir /etc/X11/fonts/local
+
+Name: %{name}
+Version: %{version}
+Release: %{release}
+License: freely redistributable
+Group: Extensions/Thai/font
+Source: %{name}-%{version}.tar.gz
+URL: http://linux.thai.net/linux-tle/
+Distribution: Linux-TLE
+Vendor: uecthai
+Packager: Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+BuildArch: noarch
+BuildRoot: /var/tmp/%{name}-%{version}
+Prereq: /usr/sbin/chkfontpath, /usr/X11R6/bin/mkfontdir
+Summary: The collection of Thai X fonts.
+
+%description
+Thai X fonts included here are dbthaitext, Phaisarn's fonts, Manop's fonts,
+Voradej's fonts, NECTEC fonts, and Poonlap's fonts. These fonts were
+collected from Internet and they are free.
+
+%prep
+%setup
+
+%build
+%configure --with-fontdir=$RPM_BUILD_ROOT%{fontdir}
+make
+
+%install
+rm -rf $RPM_BUILD_ROOT
+mkdir -p $RPM_BUILD_ROOT
+%makeinstall
+
+mkdir -p $RPM_BUILD_ROOT%{aliasdir}
+mv -f $RPM_BUILD_ROOT%{fontdir}/thai.alias \
+  $RPM_BUILD_ROOT%{aliasdir}/thaixfonts.alias
+
+rm -f $RPM_BUILD_ROOT/%{fontdir}/fonts.dir \
+   $RPM_BUILD_ROOT/%{fontdir}/fonts.alias
+
+# __os_install_post is implicitly expanded after the
+# install section... do it now, and then disable it,
+# so all work is done before building manifest.
+
+%{?__os_install_post}
+%define __os_install_post %{nil}
+
+# build the file list automagically into %{manifest}
+
+cd $RPM_BUILD_ROOT
+rm -f %{manifest}
+find . -type d \
+        | sed '1,2d;s,^\.,\%attr(-\,root\,root) \%dir ,' >> %{manifest}
+find . -type f \
+        | sed 's,^\.,\%attr(-\,root\,root) ,' >> %{manifest}
+find . -type l \
+        | sed 's,^\.,\%attr(-\,root\,root) ,' >> %{manifest}
+
+
+%post
+cat > $RPM_BUILD_ROOT%{fontdir}/fonts.alias <<EOF
+!! fonts.alias -- automatically generated file.  DO NOT EDIT.
+EOF
+cat /etc/X11/fonts/$(basename $RPM_BUILD_ROOT%{fontdir})/*.alias \
+  >> $RPM_BUILD_ROOT%{fontdir}/fonts.alias
+
+mkfontdir $RPM_BUILD_ROOT%{fontdir}
+if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{fontdir} >/dev/null)
+then
+  /usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{fontdir}
+fi
+/usr/sbin/chkfontpath --add $RPM_BUILD_ROOT%{fontdir}
+
+
+%postun
+cat > $RPM_BUILD_ROOT%{fontdir}/fonts.alias <<EOF
+!! fonts.alias -- automatically generated file.  DO NOT EDIT.
+EOF
+if (ls $RPM_BUILD_ROOT/etc/X11/fonts/$(basename %{fontdir})/*.alias \
+     >/dev/null 2>&1)
+then
+  cat $RPM_BUILD_ROOT/etc/X11/fonts/$(basename %{fontdir})/*.alias \
+    >> $RPM_BUILD_ROOT%{fontdir}/fonts.alias
+fi
+
+mkfontdir $RPM_BUILD_ROOT%{fontdir}
+if test `head -1 $RPM_BUILD_ROOT%{fontdir}/fonts.dir` -eq 0; then
+  rm -f $RPM_BUILD_ROOT%{fontdir}/fonts.dir
+  rm -f $RPM_BUILD_ROOT%{fontdir}/fonts.alias
+  rmdir $RPM_BUILD_ROOT%{fontdir}
+  /usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{fontdir}
+else
+  if (/usr/sbin/chkfontpath --list | grep $RPM_BUILD_ROOT%{fontdir} >/dev/null)
+  then
+    /usr/sbin/chkfontpath --remove $RPM_BUILD_ROOT%{fontdir}
+  fi
+  /usr/sbin/chkfontpath --add $RPM_BUILD_ROOT%{fontdir}
+fi
+
+%clean
+rm -f %{manifest}
+rm -rf $RPM_BUILD_ROOT
+
+%files -f %{manifest}
+%defattr(-,root,root)
+#%doc README
+#%docdir
+#%config
+
+%changelog
+* Mon Sep 08 2003 Vee Satayamas <vee@linux.thai.net>
+- Delete fonts.alias and fonts.dir insteads of filtering them.
+
+* Fri Sep 05 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
++ 1.2.4-4
+- fix License term, as noticed by Vee Satayamas.
+
+* Mon Jan 13 2003 Theppitak Karoonboonyanan <thep@linux.thai.net>
++ 1.2.4-3
+- fix "%install" mess in new rpmbuild version.
+
+* Sat Mar 30 2002 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
++ 1.2.4-2
+- add Prereq: section, for proper order of installation via apt
+
+* Fri Feb 23 2002 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
++ 1.2.4-1
+- build version 1.2.4
+
+* Thu Feb 22 2002 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
++ 1.2.3-3
+- fix misspelled aliases
+- move thai.alias to /etc/X11/fonts/local/thaixfonts.alias and use
+  update script to auto generate fonts.alias (borrowed from debian;
+  may split the script as a separate util package)
+ 
+* Wed Feb 20 2002 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
++ 1.2.3-2
+- fix aliases according to new font properties.
+
+* Tue Feb 19 2002 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+- build version 1.2.3.
+- remove messages from chkfontpath during installation.
+
+* Fri Jan  4 2002 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+- build version 1.2.2.
+
+* Sun Nov 25 2001 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+- use License: tag instead of Copyright:
+- move fontdir to /usr/X11R6/lib/X11/fonts/local
+- fix configure --with-fontdir option
+- add BuildArch:
+- filter out dynamic files from manifest
+- add fonts.alias manipulation in %post and %postun
+- update summary to include Poonlap's
+
+* Fri Aug 24 2001 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+- use configure script to generate .spec file
+- use variables for package names
+- create manifest for file list, instead of literal list
+- move scripts for creating fonts.dir and fonts.alias to source
+
+* Thu Apr 27 2000 Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+- collect BDF sources
+- correct Angkhankhu and Khomut in some fonts
+- complete ThaiWindows extension in PtSanSerif.bdf and PtSanSerifB.bdf
+- change font encodings to "tis620" and make aliases for "iso8859-11"
+
+* Tue Jun 22 1999 Poonlap Veeratanabutr <poon-v@fedu.uec.ac.jp>
+- add NECTEC fonts, thai18* and thai8x20nz.pcf.Z
+
+
