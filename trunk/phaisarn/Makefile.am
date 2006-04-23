@@ -1,4 +1,4 @@
-MAINTAINERCLEANFILES = Makefile.in
+DISTCLEANFILES = *.pcf.gz
 
 @MRULE@
 
@@ -14,8 +14,6 @@ EXTRA_DIST = \
 	PtThai.bdf \
 	PtThaiCOM.bdf \
 	PtThaiSmall.bdf
-
-fontdir = @fontdir@
 
 font_DATA = \
 	Phaisarn97-14.pcf.gz \
