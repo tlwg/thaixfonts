@@ -1,4 +1,4 @@
-MAINTAINERCLEANFILES = Makefile.in
+DISTCLEANFILES = *.pcf.gz
 
 @MRULE@
 
@@ -17,8 +17,6 @@ EXTRA_DIST = \
 	thai18bi_emacs.bdf \
 	thai18_emacs.bdf \
 	thai18i_emacs.bdf
-
-fontdir = @fontdir@
 
 font_DATA = \
 	pvemacs_20b.pcf.gz \

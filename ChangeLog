@@ -1,5 +1,18 @@
 2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
 
+	Clean-ups to pass 'make distcheck'
+
+	* configure.in: Used ${prefix} in $fontdir.
+
+	* {etlthai,manop,nectec,poonlap,yenbut}/Makefile.am:
+	Added DISTCLEANFILES to clean the compiled *.pcf.gz.
+	Also removed MAINTAINERCLEANFILES and redundant fontdir assignment.
+
+	* Makefile.am: Used if-then-else to cover all the DESTDIR check cases.
+	Just exitting from leading if block was not enough.
+
+2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
 	* README: Wrote some info.
 
 2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
