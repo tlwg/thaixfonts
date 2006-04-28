@@ -88,6 +88,17 @@ binary-common:
 	dh_testroot
 	dh_installchangelogs ChangeLog
 	dh_installdocs
+
+	# install old changelogs
+	for p in xfonts-thai xfonts-thai-etl xfonts-thai-manop \
+	         xfonts-thai-nectec xfonts-thai-vor; \
+	do \
+	  cp debian/$$p.changelog-pre1.2.5 \
+	     debian/$$p/usr/share/doc/$$p/changelog-pre1.2.5.Debian; \
+	  gzip -9 \
+	     debian/$$p/usr/share/doc/$$p/changelog-pre1.2.5.Debian; \
+	done
+
 	dh_installxfonts
 	dh_compress 
 	dh_fixperms
