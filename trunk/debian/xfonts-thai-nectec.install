@@ -1,2 +1,2 @@
 nectec/*.pcf.gz                 usr/share/fonts/X11/misc
-debian/xfonts-thai-nectec.alias etc/X11/fonts/X11R7/misc
+debian/xfonts-thai-nectec.alias etc/X11/fonts/misc
