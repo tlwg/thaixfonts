@@ -1,3 +1,14 @@
+thaixfonts (1:1.2.5-2) unstable; urgency=low
+
+  * debian/*.install:  Moved alias files back from /etc/X11/fonts/X11R7 to 
+    /etc/X11/fonts, according to recent changes in dh_installxfonts and
+    update-fonts-alias. See #363482, #364530, #366234.
+  * debian/control:  Build-dep on corresponding versions of debhelper and
+    xfonts-utils.
+  * Bumped standard version to 3.7.2. No changes needed.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Wed,  7 Jun 2006 16:10:50 +0700
+
 thaixfonts (1:1.2.5-1) unstable; urgency=low
 
   * New maintainer. Closes: #357878, #357879, #357880, #357881, #357882.

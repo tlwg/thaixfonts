@@ -2,9 +2,9 @@ Source: thaixfonts
 Section: x11
 Priority: optional
 Maintainer: Theppitak Karoonboonyanan <thep@linux.thai.net>
-Build-Depends: debhelper (>= 5.0.31)
-Build-Depends-Indep: autotools-dev, xfonts-utils
-Standards-Version: 3.6.2
+Build-Depends: debhelper (>= 5.0.35)
+Build-Depends-Indep: autotools-dev, xfonts-utils (>= 1:1.0.0-4)
+Standards-Version: 3.7.2
 
 Package: xfonts-thai
 Architecture: all
