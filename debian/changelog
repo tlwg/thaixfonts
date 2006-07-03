@@ -1,3 +1,9 @@
+thaixfonts (1:1.2.5-3) UNRELEASED; urgency=low
+
+  * debian/watch: Added.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Mon,  3 Jul 2006 16:18:14 +0700
+
 thaixfonts (1:1.2.5-2) unstable; urgency=low
 
   * debian/*.install:  Moved alias files back from /etc/X11/fonts/X11R7 to 
