@@ -4,8 +4,6 @@ SUBDIRS = etlthai manop nectec poonlap yenbut
 
 EXTRA_DIST = Make.rule thai.alias
 
-fontdir = @fontdir@
-
 font_DATA = thai.alias
 
 install-data-hook:

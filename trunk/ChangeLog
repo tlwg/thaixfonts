@@ -1,5 +1,14 @@
 2008-01-29  Theppitak Karoonboonyanan  <thep@linux.thai.net>
 
+	* confiugre.in:
+	  - Don't check for the unused SED.
+	  - Refer to xfonts-utils package for bdftopcf and mkfontdir.
+	  - Use ${datadir} in fontdir.
+
+	* Makefile.am: Don't assign fontdir with autoconf substitution again.
+
+2008-01-29  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
 	* AUTHORS, COPYING: Add font authors and copyright info.
 
 2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
