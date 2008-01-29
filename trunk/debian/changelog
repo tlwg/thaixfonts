@@ -1,8 +1,20 @@
-thaixfonts (1:1.2.5-3) UNRELEASED; urgency=low
+thaixfonts (1:1.2.5-3) unstable; urgency=low
 
   * debian/watch: Added.
+  * Merge all debian/xfonts-thai*.copyright into single debian/copyright file,
+    and rewrite it in machine-interpretable format.
+  * debian/rules revamp:
+    - Reorganize so that build-arch does nothing, only build-indep builds.
+    - Add missing PHONY.
+    - Do not ignore 'make disclean' errors.
+    - Install lintian overrides at binary stage, rather than install.
+    - Remove unneeded dh_makeshlibs and dh_shlibdeps.
+  * Add Vcs-Cvs, Vcs-Browser, and Homepage info.
+  * Bump Standards-Version to 3.7.3, no changes needed.
+  * Revise package descriptions (thanks linda). Also add that they are
+    TIS-620 encoded fonts.
 
- -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Mon,  3 Jul 2006 16:18:14 +0700
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Tue, 29 Jan 2008 11:43:19 +0700
 
 thaixfonts (1:1.2.5-2) unstable; urgency=low
 

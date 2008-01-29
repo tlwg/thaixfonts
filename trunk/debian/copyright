@@ -1,0 +1,36 @@
+It was downloaded from ftp://linux.thai.net/pub/thailinux/software/thaixfonts/
+
+Files: debian/*
+Copyright: © 2000-2004 Chanop Silpa-Anan <chanop@debian.org>
+           © 2006-2008 Theppitak Karoonboonyanan <thep@linux.thai.net>
+License: GPL-2+ (/usr/share/common-licenses/GPL-2)
+ This package was first individually debianized by Chanop Silpa-Anan 
+ <chanop@debian.org> during 2000-2004, and later debianized from single 
+ upstream source by Theppitak Karoonboonyanan <thep@linux.thai.net> on
+ Sun, 23 Apr 2006 20:43:51 +0700.
+
+Files: etlthai/*
+Copyright: © 1994 Manop Wongsaisuwan <wmanop@netserv.chula.ac.th>
+License: PD
+
+Files: manop/*
+Copyright: © 1994 Manop Wongsaisuwan <wmanop@netserv.chula.ac.th>
+License: PD
+
+Files: nectec/*
+Copyright: © 1999, 2000 National Electronics and Computer Technology Center
+License: GPL-2+ (/usr/share/common-licenses/GPL-2)
+
+Files: poonlap/*
+Copyright: © 2001 Poonlap Veerathanabutr <Poonlap.Veerathanbutr@japan.sun.com>
+License: MIT
+ License to copy and distribute for both commercial and
+ non-commercial use is herby granted, provided this notice
+ is preserved.
+
+Files: yenbut/*
+Copyright: © 1992 Voradesh Yenbut <yenbut@cs.washington.edu>
+License: MIT
+  These fonts are free to be redistributed as long as original copyright
+  notice is retained.
+
