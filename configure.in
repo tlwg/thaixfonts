@@ -5,17 +5,13 @@ AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_CHECK_PROGS(RMDIR,rmdir,no)
 
-AC_CHECK_PROGS(SED,sed,no)
-if test "x$SED" = "xno" ; then
-  AC_MSG_ERROR([You need sed (from sed distribution)])
-fi
 AC_CHECK_PROGS(BDFTOPCF,bdftopcf,no)
 if test "x$BDFTOPCF" = "xno" ; then
-  AC_MSG_ERROR([You need bdftopcf (from X Window System)])
+  AC_MSG_ERROR([You need bdftopcf (from xfonts-utils)])
 fi
 AC_CHECK_PROGS(MKFONTDIR,mkfontdir,no)
 if test "x$MKFONTDIR" = "xno" ; then
-  AC_MSG_ERROR([You need mkfontdir (from X Window System)])
+  AC_MSG_ERROR([You need mkfontdir (from xfonts-utils)])
 fi
 AC_CHECK_PROGS(GZIP,gzip,no)
 if test "x$GZIP" = "xno" ; then
@@ -25,7 +21,7 @@ fi
 AC_ARG_WITH(fontdir,
   [AC_HELP_STRING([--with-fontdir=DIR],
                   [font directory in DIR [PREFIX/share/fonts/X11/misc]])],
-  [fontdir="$withval"], [fontdir=\$\{prefix\}/share/fonts/X11/misc])
+  [fontdir="$withval"], [fontdir=\$\{datadir\}/fonts/X11/misc])
 AC_MSG_CHECKING(--with-fontdir)
 AC_MSG_RESULT("$fontdir")                                                                                                           
 AC_SUBST(fontdir)
