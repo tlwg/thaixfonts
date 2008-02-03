@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Theppitak Karoonboonyanan <thep@linux.thai.net>
 Build-Depends: debhelper (>= 5.0.35)
 Build-Depends-Indep: autotools-dev, xfonts-utils (>= 1:1.0.0-4)
-Vcs-Cvs: pserver:anonymous@linux.thai.net:/home/cvs software/thaixfonts
+Vcs-Cvs: :pserver:anonymous@linux.thai.net:/home/cvs software/thaixfonts
 Vcs-Browser: http://linux.thai.net/viewvc/viewvc.cgi/software/thaixfonts
 Homepage: http://linux.thai.net/projects/thaixfonts
 Standards-Version: 3.7.3
