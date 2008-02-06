@@ -2,8 +2,8 @@ Source: thaixfonts
 Section: x11
 Priority: optional
 Maintainer: Theppitak Karoonboonyanan <thep@linux.thai.net>
-Build-Depends: debhelper (>= 5.0.35), dpkg (>= 1.14.13)
-Build-Depends-Indep: autotools-dev, xfonts-utils (>= 1:1.0.0-4)
+Build-Depends: debhelper (>= 5.0.35)
+Build-Depends-Indep: autotools-dev, xfonts-utils (>= 1:1.0.0-4), dpkg (>= 1.14.13)
 Vcs-Cvs: :pserver:anonymous@linux.thai.net:/home/cvs software/thaixfonts
 Vcs-Browser: http://linux.thai.net/viewvc/viewvc.cgi/software/thaixfonts
 Homepage: http://linux.thai.net/projects/thaixfonts
