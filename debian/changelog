@@ -1,3 +1,10 @@
+thaixfonts (1:1.2.5-5) UNRELEASED; urgency=low
+
+  * debian/watch: Fix watch pattern so that only *.tar.gz is matched, not
+    *.tar.gz.md5sum.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sat, 31 May 2008 00:12:27 +0700
+
 thaixfonts (1:1.2.5-4) unstable; urgency=low
 
   * Fix CVSROOT in Vcs-Cvs, so it really works with debcheckout.
