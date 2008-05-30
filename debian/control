@@ -2,6 +2,7 @@ Source: thaixfonts
 Section: x11
 Priority: optional
 Maintainer: Theppitak Karoonboonyanan <thep@linux.thai.net>
+DM-Upload-Allowed: yes
 Build-Depends: debhelper (>= 5.0.35)
 Build-Depends-Indep: autotools-dev, xfonts-utils (>= 1:1.0.0-4), dpkg (>= 1.14.13)
 Vcs-Cvs: :pserver:anonymous@linux.thai.net:/home/cvs software/thaixfonts
@@ -12,7 +13,7 @@ Standards-Version: 3.7.3
 Package: xfonts-thai
 Architecture: all
 Depends: xfonts-thai-nectec, xfonts-thai-etl, xfonts-thai-manop, ttf-thai-tlwg
-Recommends: xfonts-thai-vor, xfonts-thai-poonlap
+Recommends: xfonts-thai-vor, xfonts-thai-poonlap, ttf-thai-arundina
 Suggests: xserver | xfs, xfonts-intl-asian
 Description: A collection of Thai fonts for X
  This package depends on all the Thai fonts packages in Debian.
