@@ -1,9 +1,16 @@
-thaixfonts (1:1.2.5-4) UNRELEASED; urgency=low
+thaixfonts (1:1.2.5-4) unstable; urgency=low
 
   * Fix CVSROOT in Vcs-Cvs, so it really works with debcheckout.
   * Build-dep on dpkg-dev (>= 1.14.13), for proper support of Vcs-Cvs field.
+  * debian/copyright:
+    - Remove inline license file referals, and use usual Debian text at the
+      bottom instead
+    - Update format to recent proposal
+  * debian/control:
+    - Recommend ttf-thai-arundina
+    - Add DM-Upload-Allowed
 
- -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Sun, 03 Feb 2008 22:13:01 +0700
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Wed, 28 May 2008 11:50:48 +0700
 
 thaixfonts (1:1.2.5-3) unstable; urgency=low
 
