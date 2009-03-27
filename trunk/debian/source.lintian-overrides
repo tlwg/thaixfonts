@@ -1,0 +1,2 @@
+# xfonts-thai is a meta-package. Its dependencies are thus manually set.
+thaixfonts source: debhelper-but-no-misc-depends xfonts-thai

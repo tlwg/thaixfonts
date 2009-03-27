@@ -1,14 +1,14 @@
 Source: thaixfonts
-Section: x11
+Section: fonts
 Priority: optional
 Maintainer: Theppitak Karoonboonyanan <thep@linux.thai.net>
 DM-Upload-Allowed: yes
 Build-Depends: debhelper (>= 5.0.35)
 Build-Depends-Indep: autotools-dev, xfonts-utils (>= 1:1.0.0-4), dpkg (>= 1.14.13)
-Vcs-Cvs: :pserver:anonymous@linux.thai.net:/home/cvs software/thaixfonts
-Vcs-Browser: http://linux.thai.net/viewvc/viewvc.cgi/software/thaixfonts
+Vcs-Svn: http://linux.thai.net/svn/software/thaixfonts
+Vcs-Browser: http://linux.thai.net/websvn/wsvn/software.thaixfonts/?sc=0
 Homepage: http://linux.thai.net/projects/thaixfonts
-Standards-Version: 3.7.3
+Standards-Version: 3.8.1
 
 Package: xfonts-thai
 Architecture: all
@@ -21,7 +21,6 @@ Description: A collection of Thai fonts for X
 Package: xfonts-thai-nectec
 Architecture: all
 Depends: ${misc:Depends}
-Conflicts: xfonts-thai (<= 0.2-1)
 Suggests: xserver | xfs
 Description: Thai fixed fonts for X from Nectec
  xfonts-thai-nectec provides one set of Thai TIS-620 fixed fonts for X.
@@ -30,7 +29,6 @@ Description: Thai fixed fonts for X from Nectec
 Package: xfonts-thai-etl
 Architecture: all
 Depends: ${misc:Depends}
-Conflicts: xfonts-thai (<= 0.2-1)
 Suggests: xserver | xfs
 Description: Thai etl fonts for X
  xfonts-thai-etl provides 3 Thai TIS-620 bitmap fonts for X. Emacs/Mule needs
@@ -39,7 +37,6 @@ Description: Thai etl fonts for X
 Package: xfonts-thai-manop
 Architecture: all
 Depends: ${misc:Depends}
-Conflicts: xfonts-thai (<= 0.2-1)
 Suggests: xserver | xfs
 Description: Dr.Manop Wongsaisuwan's bitmap fonts for X
  xfonts-thai-manop provides 4 Thai TIS-620 bitmap fonts for X.
@@ -48,7 +45,6 @@ Description: Dr.Manop Wongsaisuwan's bitmap fonts for X
 Package: xfonts-thai-vor
 Architecture: all
 Depends: ${misc:Depends}
-Conflicts: xfonts-thai (<= 0.2-1)
 Suggests: xserver | xfs
 Description: Voradesh Yenbut bitmap fonts for X
  Voradesh Yenbut created two TIS-620 bitmap fonts for X back in 1992.
@@ -57,7 +53,6 @@ Description: Voradesh Yenbut bitmap fonts for X
 Package: xfonts-thai-poonlap
 Architecture: all
 Depends: ${misc:Depends}
-Conflicts: xfonts-thai (<= 0.2-1)
 Suggests: xserver | xfs
 Description: Poonlap Veerathanabutr bitmap fonts for X
  xfonts-thai-poonlap provides 14 Thai TIS-620 bitmap fonts for X and Emacs.
