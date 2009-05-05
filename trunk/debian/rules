@@ -35,7 +35,6 @@ build-indep-stamp:  config.status
 clean:
 	dh_testdir
 	dh_testroot
-	rm -f build-arch-stamp build-indep-stamp #CONFIGURE-STAMP#
 
 	# Add here commands to clean up after the build process.
 	[ ! -f Makefile ] || $(MAKE) distclean
@@ -46,12 +45,10 @@ install: install-indep install-arch
 install-indep:
 	dh_testdir
 	dh_testroot
-	dh_clean -k -i 
+	dh_prep
 
 	# Add here commands to install the indep part of the package into
 	# debian/<package>-doc.
-
-	dh_install -i
 
 install-arch:
 # We have nothing to do.
@@ -74,11 +71,8 @@ binary-indep: build-indep install-indep
 	     debian/$$p/usr/share/doc/$$p/changelog-pre1.2.5.Debian; \
 	done
 
-	# Install lintian overrides file
-	install -D -m 644 -p debian/xfonts-thai.lintian-overrides \
-		debian/xfonts-thai/usr/share/lintian/overrides/xfonts-thai
-
 	dh_installxfonts
+	dh_lintian -i
 	dh_compress -i
 	dh_fixperms -i
 	dh_installdeb -i

@@ -1,3 +1,16 @@
+thaixfonts (1:1.2.5-6) UNRELEASED; urgency=low
+
+  * Bump debhelper compat to level 7
+    - Bump debian/compat to 7
+    - Build-dep on debhelper (>= 7)
+    - debian/rules:
+      + Replace obsoleted 'dh_clean -k' with 'dh_prep'
+      + Remove *-stamp clean-ups in clean target, as dh_clean now does it
+      + Install lintian-overrides with dh_lintian
+  * debian/rules: Remove excessive dh_install in install target
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Tue, 05 May 2009 16:15:10 +0700
+
 thaixfonts (1:1.2.5-5) unstable; urgency=low
 
   * debian/watch: Fix watch pattern so that only *.tar.gz is matched, not
