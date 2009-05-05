@@ -3,7 +3,7 @@ Section: fonts
 Priority: optional
 Maintainer: Theppitak Karoonboonyanan <thep@linux.thai.net>
 DM-Upload-Allowed: yes
-Build-Depends: debhelper (>= 5.0.35)
+Build-Depends: debhelper (>= 7)
 Build-Depends-Indep: autotools-dev, xfonts-utils (>= 1:1.0.0-4), dpkg (>= 1.14.13)
 Vcs-Svn: http://linux.thai.net/svn/software/thaixfonts
 Vcs-Browser: http://linux.thai.net/websvn/wsvn/software.thaixfonts/?sc=0
