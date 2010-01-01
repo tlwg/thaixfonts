@@ -1,4 +1,4 @@
-thaixfonts (1:1.2.5-6) UNRELEASED; urgency=low
+thaixfonts (1:1.2.5-6) unstable; urgency=low
 
   * Bump debhelper compat to level 7
     - Bump debian/compat to 7
@@ -8,8 +8,18 @@ thaixfonts (1:1.2.5-6) UNRELEASED; urgency=low
       + Remove *-stamp clean-ups in clean target, as dh_clean now does it
       + Install lintian-overrides with dh_lintian
   * debian/rules: Remove excessive dh_install in install target
+  * debian/control:
+    - Update my e-mail address to @debian.org.
+    - Drop DM-Upload-Allowed.
+  * debian/copyright:
+    - Update my e-mail address for debian/* to @debian.org.
+  * Bump Standards-Version to 3.8.3 (no changes needed)
+  * Switch to "3.0 (quilt)" source format.
+  * Rebuild against debhelper (>= 7.4.11) and xfonts-utils (>= 1:7.5+2)
+    to pass piuparts.
+  * Improve package descriptions [lintian].
 
- -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Tue, 05 May 2009 16:15:10 +0700
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Fri, 01 Jan 2010 22:44:21 +0700
 
 thaixfonts (1:1.2.5-5) unstable; urgency=low
 
