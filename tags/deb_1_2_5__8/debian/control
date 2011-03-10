@@ -1,0 +1,73 @@
+Source: thaixfonts
+Section: fonts
+Priority: optional
+Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
+Build-Depends: debhelper (>= 7.0.50~)
+Build-Depends-Indep: autotools-dev, xfonts-utils
+Vcs-Svn: http://linux.thai.net/svn/software/thaixfonts
+Vcs-Browser: http://linux.thai.net/websvn/wsvn/software.thaixfonts/?sc=0
+Homepage: http://linux.thai.net/projects/thaixfonts
+Standards-Version: 3.9.1
+
+Package: xfonts-thai
+Architecture: all
+Depends: xfonts-thai-nectec, xfonts-thai-etl, xfonts-thai-manop, ttf-thai-tlwg
+Recommends: xfonts-thai-vor, xfonts-thai-poonlap, ttf-thai-arundina
+Suggests: xserver | xfs, xfonts-intl-asian
+Description: A collection of Thai fonts for X
+ This is a metapackage which depends on all available Thai fonts packages.
+
+Package: xfonts-thai-nectec
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: xserver | xfs
+Description: Thai fixed fonts for X from Nectec
+ This package provides one set of Thai TIS-620 pseudo-monospace (with
+ zero-width combining character) bitmap fonts for X developed by NECTEC, with
+ complete set of normal, bold, italic, and bold-italic faces.
+ .
+ This font looks good in xiterm+thai, with complete text styles support.
+
+Package: xfonts-thai-etl
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: xserver | xfs
+Description: Thai etl fonts for X
+ This package provides 3 Thai TIS-620 monospace (with full-width combining
+ characters) bitmap fonts for X developed by ETL.
+ .
+ Emacs/Mule needs these fonts to display Thai. Only normal weight is provided,
+ though.
+
+Package: xfonts-thai-manop
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: xserver | xfs
+Description: Dr.Manop Wongsaisuwan's bitmap fonts for X
+ This package provides 4 Thai TIS-620 pseudo-monospace (with zero-width
+ combining characters) bitmap fonts for X developed by  Dr. Manop Wongsaisuwan
+ while he was in the US.
+ .
+ These fonts are good for xiterm+thai, but with only normal weight provided.
+
+Package: xfonts-thai-vor
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: xserver | xfs
+Description: Voradesh Yenbut bitmap fonts for X
+ This package provides two TIS-620 pseudo-monospace (with zero-width combining
+ characters) bitmap fonts for X developed by Voradesh Yenbut back in 1992.
+ .
+ These fonts are good for xiterm+thai, but with only normal weight provided.
+
+Package: xfonts-thai-poonlap
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: xserver | xfs
+Description: Poonlap Veerathanabutr bitmap fonts for X
+ This package provides 14 Thai TIS-620 pseudo-monospace (with zero-width
+ combining characters) and monospace (with full-width combining characters)
+ bitmap fonts for X and Emacs.
+ .
+ These fonts are good for xiterm+thai and Emacs, with complete text styles
+ support for most fonts.

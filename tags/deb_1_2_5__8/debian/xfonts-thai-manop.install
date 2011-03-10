@@ -1,0 +1,2 @@
+manop/*.pcf.gz                  usr/share/fonts/X11/misc
+debian/xfonts-thai-manop.alias  etc/X11/fonts/misc

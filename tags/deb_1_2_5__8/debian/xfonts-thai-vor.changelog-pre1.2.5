@@ -1,0 +1,64 @@
+xfonts-thai-vor (20040416-4) unstable; urgency=low
+
+  * QA upload.
+  * Transition to modular X.  Closes: #362400.
+    - Move fonts to /usr/share/fonts/X11.
+    - Build-depend on xfonts-utils instead of xutils.
+    - Build-depend on debhelper 5.0.29, which supports the new font
+      location, and replaces the xutils dependency with xfonts-utils.
+  * Let dh_compress compress .pcf files.
+
+ -- Matej Vela <vela@debian.org>  Thu, 13 Apr 2006 14:13:55 +0200
+
+xfonts-thai-vor (20040416-3) unstable; urgency=low
+
+  * QA upload.
+  * Package is orphaned (#357882); set maintainer to Debian QA Group.
+  * Switch to debhelper 5.
+  * Use Build-Depends-Indep instead of Build-Depends, and binary-indep
+    instead of binary-arch.
+  * Conforms to Standards version 3.6.2.
+
+ -- Matej Vela <vela@debian.org>  Wed,  5 Apr 2006 13:26:16 +0200
+
+xfonts-thai-vor (20040416-2) unstable; urgency=low
+
+  * Reapply the patch missed in previos upload:
+     Use tis620 encoding.
+
+ -- Chanop Silpa-Anan <chanop@debian.org>  Mon, 19 Apr 2004 14:46:02 +1000
+
+xfonts-thai-vor (20040416-1) unstable; urgency=low
+
+  * Redebianise. (closes: #136673)
+
+ -- Chanop Silpa-Anan <chanop@debian.org>  Fri, 16 Apr 2004 20:02:27 +1000
+
+xfonts-thai-vor (20001108-3) unstable; urgency=low
+
+  * Fix Build-Depends-Indep. (closes: #134862)
+  * Mark /etc/* as conffiles. (closes: #132088)
+
+ -- Chanop Silpa-Anan <chanop@debian.org>  Thu, 21 Feb 2002 13:33:23 +1100
+
+xfonts-thai-vor (20001108-2) unstable; urgency=low
+
+  * Make sure that these fonts use tis620-0 encoding
+  * Add alias to iso8859-11 
+
+ -- Chanop Silpa-Anan <chanop@debian.org>  Mon, 13 Nov 2000 19:55:21 +1100
+
+xfonts-thai-vor (20001108-1) unstable; urgency=low
+
+  * Initial release for Debian upload
+
+ -- Chanop Silpa-Anan <chanop@debian.org>  Wed,  8 Nov 2000 21:41:03 +1100
+
+xfonts-thai-vor (0.1-1) unstable; urgency=low
+
+  * Initial Release.
+  * Split from xfonts-thai (0.2-1)
+  * Fix copyright from old package
+
+ -- Chanop Silpa-Anan (Tim) <chanop@writeme.com>  Fri, 28 Jan 2000 16:09:11 +1100
+
