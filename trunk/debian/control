@@ -2,12 +2,12 @@ Source: thaixfonts
 Section: fonts
 Priority: optional
 Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
-Build-Depends: debhelper (>= 7)
-Build-Depends-Indep: autotools-dev, xfonts-utils (>= 1:1.0.0-4), dpkg (>= 1.14.13)
+Build-Depends: debhelper (>= 7.0.50~)
+Build-Depends-Indep: autotools-dev, xfonts-utils
 Vcs-Svn: http://linux.thai.net/svn/software/thaixfonts
 Vcs-Browser: http://linux.thai.net/websvn/wsvn/software.thaixfonts/?sc=0
 Homepage: http://linux.thai.net/projects/thaixfonts
-Standards-Version: 3.8.3
+Standards-Version: 3.9.1
 
 Package: xfonts-thai
 Architecture: all

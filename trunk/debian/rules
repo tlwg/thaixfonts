@@ -1,65 +1,14 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
-# Sample debian/rules that uses debhelper.
-#
-# This file was originally written by Joey Hess and Craig Small.
-# As a special exception, when this file is copied by dh-make into a
-# dh-make output file, you may use that output file without restriction.
-# This special exception was added by Craig Small in version 0.37 of dh-make.
-#
-# Modified to make a template file for a multi-binary package with separated
-# build-arch and build-indep targets  by Bill Allombert 2001
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-config.status: configure
-	dh_testdir
-	# Add here commands to configure the package.
-	./configure --prefix=/usr
+%:
+	dh $@
 
-
-#Architecture 
-build: build-arch build-indep
-
-build-arch:
-# We have nothing to do.
-
-build-indep: build-indep-stamp
-build-indep-stamp:  config.status
-
-	# Add here commands to compile the indep part of the package.
-	-$(MAKE) 
-	touch build-indep-stamp
-
-clean:
-	dh_testdir
-	dh_testroot
-
-	# Add here commands to clean up after the build process.
-	[ ! -f Makefile ] || $(MAKE) distclean
-
-	dh_clean 
-
-install: install-indep install-arch
-install-indep:
-	dh_testdir
-	dh_testroot
-	dh_prep
-
-	# Add here commands to install the indep part of the package into
-	# debian/<package>-doc.
-
-install-arch:
-# We have nothing to do.
-
-# Build architecture independant packages using the common target.
-binary-indep: build-indep install-indep
-	dh_testdir
-	dh_testroot
-	dh_installchangelogs -i ChangeLog
-	dh_installdocs -i
-	dh_install -i
+override_dh_installchangelogs:
+	dh_installchangelogs
 
 	# install old changelogs
 	for p in xfonts-thai xfonts-thai-etl xfonts-thai-manop \
@@ -71,18 +20,3 @@ binary-indep: build-indep install-indep
 	     debian/$$p/usr/share/doc/$$p/changelog-pre1.2.5.Debian; \
 	done
 
-	dh_installxfonts
-	dh_lintian -i
-	dh_compress -i
-	dh_fixperms -i
-	dh_installdeb -i
-	dh_gencontrol -i
-	dh_md5sums -i
-	dh_builddeb -i
-
-# Build architecture dependant packages using the common target.
-binary-arch: build-arch install-arch
-# We have nothing to do.
-
-binary: binary-arch binary-indep
-.PHONY: build build-arch build-indep clean binary-indep binary-arch binary install install-indep install-arch 
