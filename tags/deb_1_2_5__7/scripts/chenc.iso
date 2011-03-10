@@ -1,0 +1,8 @@
+for f in *.bdf ; do
+  cat $f | \
+  sed -e 's/tis620-0/iso8859-11/' | \
+  sed -e 's/tis620/iso8859/' | \
+  sed -e 's/CHARSET_ENCODING "0"/CHARSET_ENCODING "11"/' > /tmp/$f
+  mv -f /tmp/$f $f
+done
+
