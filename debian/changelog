@@ -1,3 +1,13 @@
+thaixfonts (1:1.2.5-7) unstable; urgency=low
+
+  * Drop versioned B-Dep on ancient xfonts-utils and dpkg.
+  * Bump Standards-Version to 3.9.1 (no changes needed)
+  * debian/copyright: Updated to DEP-5 rev 166.
+  * debian/rules: Switch to dh 7 rules.
+  * B-Dep on debhelper (>= 7.0.50~) for override_dh_ target support [lintian].
+
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Thu, 10 Mar 2011 11:50:41 +0700
+
 thaixfonts (1:1.2.5-6) unstable; urgency=low
 
   * Bump debhelper compat to level 7

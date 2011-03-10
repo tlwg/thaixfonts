@@ -1,38 +1,40 @@
-Format-Specification: http://wiki.debian.org/Proposals/CopyrightFormat?action=recall&rev=454
+Format: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=166
 Upstream-Name: thaixfonts
-Upstream-Maintainer: http://groups.google.com/group/thai-linux-foss-devel
-Upstream-Source: ftp://linux.thai.net/pub/thailinux/software/thaixfonts/
+Upstream-Contact: http://groups.google.com/group/thai-linux-foss-devel
+Source: ftp://linux.thai.net/pub/thailinux/software/thaixfonts/
 
 Files: etlthai/*
-Copyright: © 1994 Manop Wongsaisuwan <wmanop@netserv.chula.ac.th>
-License: PD
+Copyright: 1994 Manop Wongsaisuwan <wmanop@netserv.chula.ac.th>
+License: public-domain
+ Public domain font.  Share and enjoy.
 
 Files: manop/*
-Copyright: © 1994 Manop Wongsaisuwan <wmanop@netserv.chula.ac.th>
-License: PD
+Copyright: 1994 Manop Wongsaisuwan <wmanop@netserv.chula.ac.th>
+License: public-domain
+ Public domain font.  Share and enjoy.
 
 Files: nectec/*
-Copyright: © 1999, 2000 National Electronics and Computer Technology Center
+Copyright: 1999, 2000 National Electronics and Computer Technology Center
 License: GPL-2+
  On Debian GNU/Linux systems, the complete text of the GNU General Public
  License version 2 can be found in `/usr/share/common-licenses/GPL-2'.
 
 Files: poonlap/*
-Copyright: © 2001 Poonlap Veerathanabutr <Poonlap.Veerathanbutr@japan.sun.com>
+Copyright: 2001 Poonlap Veerathanabutr <Poonlap.Veerathanbutr@japan.sun.com>
 License: MIT
  License to copy and distribute for both commercial and
  non-commercial use is herby granted, provided this notice
  is preserved.
 
 Files: yenbut/*
-Copyright: © 1992 Voradesh Yenbut <yenbut@cs.washington.edu>
+Copyright: 1992 Voradesh Yenbut <yenbut@cs.washington.edu>
 License: MIT
   These fonts are free to be redistributed as long as original copyright
   notice is retained.
 
 Files: debian/*
-Copyright: © 2000-2004 Chanop Silpa-Anan <chanop@debian.org>
-Copyright: © 2006-2008 Theppitak Karoonboonyanan <thep@debian.org>
+Copyright: 2000-2004 Chanop Silpa-Anan <chanop@debian.org>
+Copyright: 2006-2008 Theppitak Karoonboonyanan <thep@debian.org>
 License: GPL-2+
  On Debian GNU/Linux systems, the complete text of the GNU General Public
  License version 2 can be found in `/usr/share/common-licenses/GPL-2'.
