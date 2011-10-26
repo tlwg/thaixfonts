@@ -1,11 +1,11 @@
-thaixfonts (1:1.2.5-9) UNRELEASED; urgency=low
+thaixfonts (1:1.2.5-9) unstable; urgency=low
 
   * debian/copyright: Use non-forwarding format URL. Bump to revision 202.
   * Update xfonts-thai dependency from ttf-thai-tlwg to fonts-thai-tlwg.
   * Bump Standards-Version to 3.9.2 (no changes needed)
   * Remove article from package synopsis and adjust description. [lintian]
 
- -- Theppitak Karoonboonyanan <thep@debian.org>  Wed, 26 Oct 2011 09:01:52 +0700
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Wed, 26 Oct 2011 09:23:49 +0700
 
 thaixfonts (1:1.2.5-8) unstable; urgency=low
 
