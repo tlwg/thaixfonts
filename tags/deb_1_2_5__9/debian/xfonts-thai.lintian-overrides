@@ -1,0 +1,3 @@
+# xfonts-thai is a meta-package for xfonts-thai-*. So, it needs the
+# dependencies.
+xfonts-thai: package-depends-on-an-x-font-package
