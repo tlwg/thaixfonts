@@ -7,11 +7,11 @@ Build-Depends-Indep: autotools-dev, xfonts-utils
 Vcs-Svn: http://linux.thai.net/svn/software/thaixfonts
 Vcs-Browser: http://linux.thai.net/websvn/wsvn/software.thaixfonts/?sc=0
 Homepage: http://linux.thai.net/projects/thaixfonts
-Standards-Version: 3.9.1
+Standards-Version: 3.9.2
 
 Package: xfonts-thai
 Architecture: all
-Depends: xfonts-thai-nectec, xfonts-thai-etl, xfonts-thai-manop, ttf-thai-tlwg
+Depends: xfonts-thai-nectec, xfonts-thai-etl, xfonts-thai-manop, fonts-thai-tlwg
 Recommends: xfonts-thai-vor, xfonts-thai-poonlap, ttf-thai-arundina
 Suggests: xserver | xfs, xfonts-intl-asian
 Description: A collection of Thai fonts for X
