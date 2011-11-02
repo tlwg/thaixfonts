@@ -1,3 +1,9 @@
+thaixfonts (1:1.2.5-10) unstable; urgency=low
+
+  * Update xfonts-thai Recommends from ttf-thai-arundina to fonts-sipa-arundina.
+
+ -- Theppitak Karoonboonyanan <thep@debian.org>  Wed, 02 Nov 2011 11:50:47 +0700
+
 thaixfonts (1:1.2.5-9) unstable; urgency=low
 
   * debian/copyright: Use non-forwarding format URL. Bump to revision 202.

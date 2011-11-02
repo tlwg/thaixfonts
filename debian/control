@@ -12,7 +12,7 @@ Standards-Version: 3.9.2
 Package: xfonts-thai
 Architecture: all
 Depends: xfonts-thai-nectec, xfonts-thai-etl, xfonts-thai-manop, fonts-thai-tlwg
-Recommends: xfonts-thai-vor, xfonts-thai-poonlap, ttf-thai-arundina
+Recommends: xfonts-thai-vor, xfonts-thai-poonlap, fonts-sipa-arundina
 Suggests: xserver | xfs, xfonts-intl-asian
 Description: Collection of Thai fonts for X (metapackage)
  This is a metapackage which depends on or recommends all available Thai
