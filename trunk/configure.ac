@@ -1,5 +1,8 @@
-AC_INIT(thai.alias)
-AM_INIT_AUTOMAKE(thaixfonts, 1.2.5)
+AC_PREREQ(2.59)
+
+AC_INIT(thaixfonts, 1.2.5, thai-linux-foss-devel@googlegroups.com)
+AC_CONFIG_SRCDIR([thai.alias])
+AM_INIT_AUTOMAKE(dist-xz no-dist-gzip)
 
 AC_PROG_INSTALL
 AC_PROG_LN_S
