@@ -29,8 +29,8 @@ DOWNLOADS
   ftp://linux.thai.net/pub/thailinux/software/thaixfonts
 
 
-CVS
+SVN
 
-  cvs -d :pserver:anonymous@linux.thai.net:/home/cvs co software/thaixfonts
+  svn co http://linux.thai.net/svn/software/thaixfonts/trunk thaixfonts
 
 
