@@ -1,0 +1,205 @@
+2013-10-22  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	* configure.ac, NEWS:
+	=== Version 1.2.6 ===
+
+2013-01-28  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	Modernize autoconf & switch to XZ tarball compression.
+
+	* configure.in -> configure.ac:
+	  - Rename file for modern autoconf.
+	  - Require autoconf 2.59.
+	  - Replace deprecated AC_INIT() form with PACKAGE, VERSION form.
+	  - Also add BUG-REPORT address.
+	  - Use AC_CONFIG_SRCDIR() instead for the old AC_INIT() form.
+	  - Replace deprecated AC_INIT_AUTOMAKE() form with OPTIONS form,
+	    passing "dist-xz no-dist-gzip" options to switch to XZ tarball.
+
+2008-01-29  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	* confiugre.in:
+	  - Don't check for the unused SED.
+	  - Refer to xfonts-utils package for bdftopcf and mkfontdir.
+	  - Use ${datadir} in fontdir.
+
+	* Makefile.am: Don't assign fontdir with autoconf substitution again.
+
+2008-01-29  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	* AUTHORS, COPYING: Add font authors and copyright info.
+
+2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	* configure.in, NEWS:
+	=== Version 1.2.5 ===
+
+2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	Clean-ups to pass 'make distcheck'
+
+	* configure.in: Used ${prefix} in $fontdir.
+
+	* {etlthai,manop,nectec,poonlap,yenbut}/Makefile.am:
+	Added DISTCLEANFILES to clean the compiled *.pcf.gz.
+	Also removed MAINTAINERCLEANFILES and redundant fontdir assignment.
+
+	* Makefile.am: Used if-then-else to cover all the DESTDIR check cases.
+	Just exitting from leading if block was not enough.
+
+2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	* README: Wrote some info.
+
+2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	* thai.alias: Removed phaisarn entries.
+
+2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	* Makefile.am: Do not generate fonts dir/alias when building binary
+	packages with non-null DESTDIR.  Appended thai.alias to existing
+	fonts.dir with a single cat command, instead of first renaming old
+	file.
+
+2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	* configure.in: Set default font dir to Xorg 7 directory.
+
+2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	* configure.in, Makefile.am: Totally removed phaisarn, until the
+	licenses for the rest fonts are clear.
+
+2006-04-23  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	* phaisarn/Makefile.am: Removed entries which obviously have license
+	problems, and two entries which duplicate fonts in other directories.
+
+2006-04-12  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in, Makefile.am: Removed dbthaitext from distribution.
+
+2005-10-09  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* configure.in:
+	Formatted configure options help strings with AC_HELP_STRING().
+
+2003-09-08  Vee Satayamas <vee@linux.thai.net>
+	* thaixfonts.spec.in
+	Delete fonts.alias and fonts.dir insteads of filtering them.
+
+2003-09-05  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* thaixfonts.spec.in:
+	Fix License term, as noticed by Vee Satayamas.
+
+2003-01-13  Theppitak Karoonboonyanan <thep@linux.thai.net>
+
+	* Makefile.am:
+	Use install-data-hook instead of install-data-local target,
+	and uninstall-hook instead of uninstall-local as well.
+
+	* thaixfonts.spec.in:
+	Fix "%install" mess in new rpmbuild version.
+
+2002-03-30  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* thaixfonts.spec.in:
+	Add Prereq: section, for proper order of installation via apt.
+	(Thanks to Sadit)
+
+2002-02-23  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* phaisarn/angsana*.bdf:
+	Relocate extra chars into 8-bit range.
+
+	* thai.alias:
+	Fix thai.alias according to recent changes in PtThaiSmall.bdf
+	and PtSanSerif.bdf
+
+	* thaixfonts.spec.in:
+	Check-in changes made to RPM spec during TLE 4.1 development.
+	(Mainly: automatically generate fonts.alias from alias files
+	stored in /etc/X11/fonts [borrowed from debian] instead of
+	trying to merge old and new fonts.alias, which would otherwise
+	cause problem with RPM scriptlet execution order)
+
+	* phaisarn/PtBrowallia12.bdf:
+	Change font size from 12 Px to 16 Px (actual ascent).
+	Change spacing from "C" to "P".
+
+	* configure.in:
+	Version 1.2.4
+
+2002-02-19  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* phaisarn/PtThaiSmall.bdf:
+	Fix font size property from 20 px to 14 px, to reflect actual size.
+	Change font spacing tag from "C" to "P".
+
+	* phaisarn/PtSanSerif.bdf, phaisarn/PtSanSerifB.bdf:
+	Fix font size property from 8 px to 14 px, to reflect actual size.
+	Change font spacing tag from "m" to "p".
+
+	* configure.in:
+	Version 1.2.3
+
+2002-01-04  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* thai.alias:
+	Add tis620-0 subsetting aliases for tis620-2 fonts.
+	Fix comment sign from # to !
+
+	* configure.in:
+	Version 1.2.2
+
+2001-11-25  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* thaixfonts.spec.in:
+	Fix configure --with-fontdir option. Redefine fontdir to
+	/usr/X11R6/lib/X11/fonts/local. Add BuildArch: section.
+	Filter out dynamic files from manifest.
+	Add fonts.alias manipulation in %post and %postun.
+
+	* Makefile.am:
+	Add thai.alias to installation list, for post processing.
+	Fix uninstall-local script, to remove dir if empty.
+
+	* Makefile.am, dbthaitext/Makefile.am, etlthai/Makefile.am,
+	manop/Makefile.am, nectec/Makefile.am, phaisarn/Makefile.am,
+	yenbut/Makefile.am:
+	Fix fontdir var: remove $(DESTDIR) from assignment, and use it
+	literally in installation scripts instead.
+
+	* configure.in, Makefile.am, poonlap/Makefile.am:
+	Add Poonlap's fonts to the package.
+
+	* thai.alias, -poonlap/fonts.alias, -poonlap/fonts.dir:
+	Move Poonlap's alias info into thai.alias.
+
+	* thaixfonts.spec.in:
+	Update summary to include Poonlap's.
+	Fix many typos in scripts.
+
+	* configure.in:
+	Version 1.2.1
+
+2001-08-24  Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+
+	* +configure.in, +Makefile.am, +Make.rule,
+	+{dbthaitext|etlthai|manop|nectec|phaisarn|yenbut}/Makefile.am :
+	Use autoconf/automake to manage package.
+
+	* +AUTHORS, +INSTALL, +NEWS, +README, +COPYING, +ChangeLog :
+	Add necessary files for automake.
+
+	* +thaixfonts.spec.in :
+	Add RPM spec file into the source tree.
+
+	* +autogen.sh :
+	Add autogen.sh script for invoking autotools.
+
+	* Makefile.am, {dbthaitext|etlthai|manop|phaisarn|yenbut}/Makefile.am :
+	Add EXTRA_DIST to list source files. Use DESTDIR in fontdir.
+
