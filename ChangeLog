@@ -1,5 +1,10 @@
 2013-10-22  Theppitak Karoonboonyanan  <thep@linux.thai.net>
 
+	* README:
+	  - Update CVS info with SVN.
+
+2013-10-22  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
 	* configure.ac:
 	  - Post-release version suffix added.
 
