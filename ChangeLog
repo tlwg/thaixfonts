@@ -1,3 +1,9 @@
+2015-07-14  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Avoid timestamp for reproducibility.
+
+	* Make.rule: Use gzip -n to avoid timestamp on compressed fonts.
+
 2014-12-30  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	* COPYING: Add copyright & license for the font collection itself.
