@@ -3,5 +3,5 @@
 	$(BDFTOPCF) -o $@ $<
 
 %.pcf.gz: %.pcf
-	$(GZIP) -f -9 $<
+	$(GZIP) -f -9 -n $<
 
