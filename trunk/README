@@ -1,4 +1,4 @@
-thaixfonts is a collection of Thai bitmap fonts available in free licenses.
+thaixfonts is a collection of Thai bitmap fonts available under free licenses.
 It aims to collect fonts for installation convenience, and maintain them as
 needed. This is because most fonts are aged, unmaintained, and now even 
 unavailable in the original sources.
@@ -19,8 +19,8 @@ Try './configure --help' to see the full list of available options.
 TOOLS
 
 You can use any BDF font editor to edit the fonts, for example:
-  - xmbdfed - http://crl.nmsu.edu/~mleisher/xmbdfed.html
-  - gbdfed  - http://crl.nmsu.edu/~mleisher/gbdfed.html
+  - xmbdfed - http://linux.maruhn.com/sec/xmbdfed.html
+  - gbdfed  - http://www.math.nmsu.edu/~mleisher/Software/gbdfed/
   - bdfedit - http://hea-www.harvard.edu/~fine/Tech/bdfedit.html
 
 
