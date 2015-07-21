@@ -1,5 +1,12 @@
 2015-07-21  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
+	Drop old CVS relics.
+
+	* yenbut/thai8x13.bdf, yenbut/thai9x13.bdf:
+	  - Remove '$Id' CVS tags.
+
+2015-07-21  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
 	* COPYING: Update year.
 
 2015-07-21  Theppitak Karoonboonyanan  <theppitak@gmail.com>
