@@ -1,5 +1,9 @@
 2015-07-21  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
+	* COPYING: Update year.
+
+2015-07-21  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
 	* configure.ac, -thaixfonts.spec.in:
 	  - Drop obsolete and unmaintained RPM spec.
 
