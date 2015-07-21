@@ -16,7 +16,6 @@ MIN_SPACE 4
 FONT_ASCENT 17
 FONT_DESCENT 4
 COPYRIGHT "Copyright (c) 1992 Voradesh Yenbut"
-NOTICE "$Id: thai9x13.bdf,v 1.1 2001-08-24 15:55:13 thep Exp $"
 _XMBDFED_INFO "Edited with xmbdfed 3.8."
 ENDPROPERTIES
 CHARS 183
