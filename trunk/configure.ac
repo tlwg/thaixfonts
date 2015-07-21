@@ -39,6 +39,5 @@ AC_OUTPUT(
   nectec/Makefile
   poonlap/Makefile
   yenbut/Makefile
-  thaixfonts.spec
 )
 
