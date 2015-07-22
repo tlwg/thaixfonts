@@ -1,3 +1,9 @@
+Version 1.2.7 (2015-07-22)
+=============
+- Clarify package licenseing.
+- Installation image is now reproducible.
+- Drop obsolete and unmaintained RPM spec.
+
 Version 1.2.6 (2013-10-22)
 =============
 - Updated build system.
