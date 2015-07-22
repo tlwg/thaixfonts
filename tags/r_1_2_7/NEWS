@@ -1,0 +1,15 @@
+Version 1.2.7 (2015-07-22)
+=============
+- Clarify package licenseing.
+- Installation image is now reproducible.
+- Drop obsolete and unmaintained RPM spec.
+
+Version 1.2.6 (2013-10-22)
+=============
+- Updated build system.
+- Switch to .tar.xz release tarball.
+
+Version 1.2.5 (2006-04-23)
+=============
+- Dropped fonts with unclear licenses (dbthaitext, phaisarn).
+

@@ -1,0 +1,103 @@
+This package collects Thai BDF fonts available in the public.
+The license of each font is as per vendors.
+
+* etlthai/*:
+
+  Author:
+
+    Manop Wongsaisuwan <wmanop@netserv.chula.ac.th>
+
+  Copyright:
+
+    These are public domain fonts.
+
+* manop/*:
+
+  Author:
+
+    Manop Wongsaisuwan <wmanop@netserv.chula.ac.th>
+
+  Copyright:
+
+    These are public domain fonts.
+    You can find author's statement at the end of manop/README file.
+
+* nectec/*:
+
+  Author:
+
+    Virach Sornlertlamvanich <virach@nectec.or.th>
+
+  Copyright:
+
+    Copyright (C) 1999, 2000 NECTEC.
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
+
+* poonlap/*:
+
+  Author:
+
+    Poonlap Veerathanabutr <Poonlap.Veerathanbutr@japan.sun.com>
+
+  Copyright:
+
+    Copyright (c) 2001, Poonlap Veerathanabutr.
+
+    License to copy and distribute for both commercial and
+    non-commercial use is herby granted, provided this notice
+    is preserved.
+
+    Poonlap.Veerathanabutr@japan.sun.com
+    This font is my hobby, there is nothing related with Sun Microsystems.
+    The motivation is I want to use some Thai font with emacs but I don't
+    like the default one. This font is a bit big but the "head" of thai shows
+    apparently which I think it is important.
+
+    Produced with bdfedit, a tcl/tk font editing program
+    written by Thomas A. Fine  
+
+* yenbut/*:
+
+  Author:
+
+    Voradesh Yenbut <yenbut@cs.washington.edu>
+
+  Copyright:
+
+    These fonts are free to be redistributed as long as original copyright
+    notice is retained -- "Copyright (c) 1992 Voradesh Yenbut".
+
+* The font collection itself:
+
+  Copyright:
+
+    Copyright (c) 2001-2015 Theppitak Karoonboonyanan.
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+

@@ -1,0 +1,36 @@
+thaixfonts is a collection of Thai bitmap fonts available under free licenses.
+It aims to collect fonts for installation convenience, and maintain them as
+needed. This is because most fonts are aged, unmaintained, and now even 
+unavailable in the original sources.
+
+
+INSTALLATION
+
+You can use the BDF fonts as is, or install them to the system in compressed
+PCF format, using the normal GNU build process:
+  $ ./configure [options]
+  $ make
+  $ make install
+You can specify the target install directory with the --with-fontdir=<DIR>
+option. The default value is the usual location for misc fonts in X.
+Try './configure --help' to see the full list of available options.
+
+
+TOOLS
+
+You can use any BDF font editor to edit the fonts, for example:
+  - xmbdfed - http://linux.maruhn.com/sec/xmbdfed.html
+  - gbdfed  - http://www.math.nmsu.edu/~mleisher/Software/gbdfed/
+  - bdfedit - http://hea-www.harvard.edu/~fine/Tech/bdfedit.html
+
+
+DOWNLOADS
+
+  ftp://linux.thai.net/pub/thailinux/software/thaixfonts
+
+
+SVN
+
+  svn co http://linux.thai.net/svn/software/thaixfonts/trunk thaixfonts
+
+
