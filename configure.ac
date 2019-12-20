@@ -1,6 +1,8 @@
 AC_PREREQ(2.59)
 
-AC_INIT(thaixfonts, 1.2.7, thai-linux-foss-devel@googlegroups.com)
+AC_INIT(thaixfonts,
+        m4_esyscmd([build-aux/git-version-gen]),
+        [thai-linux-foss-devel@googlegroups.com])
 AC_CONFIG_SRCDIR([thai.alias])
 AM_INIT_AUTOMAKE(dist-xz no-dist-gzip)
 

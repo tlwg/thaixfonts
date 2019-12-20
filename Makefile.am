@@ -2,7 +2,11 @@ MAINTAINERCLEANFILES = Makefile.in
 
 SUBDIRS = etlthai manop nectec poonlap yenbut
 
-EXTRA_DIST = Make.rule thai.alias
+EXTRA_DIST =	\
+	Make.rule	\
+	thai.alias	\
+	build-aux/git-version-gen	\
+	$(NULL)
 
 font_DATA = thai.alias
 
@@ -37,3 +41,5 @@ uninstall-hook:
 		$(RMDIR) $(DESTDIR)$(fontdir); \
 	fi
 
+dist-hook:
+	echo $(VERSION) > $(distdir)/VERSION
