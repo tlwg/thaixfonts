@@ -19,18 +19,16 @@ Try './configure --help' to see the full list of available options.
 TOOLS
 
 You can use any BDF font editor to edit the fonts, for example:
-  - xmbdfed - http://linux.maruhn.com/sec/xmbdfed.html
-  - gbdfed  - http://www.math.nmsu.edu/~mleisher/Software/gbdfed/
-  - bdfedit - http://hea-www.harvard.edu/~fine/Tech/bdfedit.html
+  - gbdfed  - http://sofia.nmsu.edu/~mleisher/Software/gbdfed/
+  - bdfedit - https://hea-www.harvard.edu/~fine/Tech/bdfedit.html
 
 
 DOWNLOADS
 
-  ftp://linux.thai.net/pub/thailinux/software/thaixfonts
+  https://linux.thai.net/pub/thailinux/software/thaixfonts
 
 
-SVN
+Git
 
-  svn co http://linux.thai.net/svn/software/thaixfonts/trunk thaixfonts
-
+  git clone https://github.com/tlwg/thaixfonts.git
 

@@ -1,3 +1,14 @@
+2020-12-30  Theppitak Karoonboonyanan  <theppitak@gmail.com>
+
+	Update README
+
+	* README:
+	  - Remove obsolete xmbdfed
+	  - Update URL for gbdfed
+	  - Use HTTPS in bdfedit URL
+	  - Use HTTPS in thaixfonts download URL
+	  - Replace old SVN repo with Git
+
 2019-12-20  Theppitak Karoonboonyanan  <theppitak@gmail.com>
 
 	Use GitHub issue tracker as bug report address.
